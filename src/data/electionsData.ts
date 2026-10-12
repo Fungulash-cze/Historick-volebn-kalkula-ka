@@ -25,7 +25,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#dc2626',
         historicalPercentage: 25.7,
         historicalSeats: 74,
-        description: 'Hlavní strana průmyslového dělnictva. Požadovala socializaci klíčových odvětví, silnou ochranu pracujících a rozsáhlou pozemkovou reformu.',
+        description: 'Dominantní politická síla průmyslového dělnictva a městského proletariátu, která vzešla z voleb 1920 jako nejsilnější strana nového státu. Hájila sociální spravedlnost, radikální pozemkovou reformu, zavedení 8hodinové pracovní doby, progresivní zdanění a postupné zestátnění klíčového průmyslu a dolů. Vedení v čele s ministerským předsedou Vlastimilem Tusarem a Rudolfem Bechyněm stálo na pozicích demokratického parlamentarismu a loajality k republice. Uvnitř strany však již silně vřelo radikální marxistické křídlo (Bohumír Šmeral, Antonín Zápotocký), které se po rozkolu na podzim 1920 odštěpilo a založilo KSČ.',
         programHighlight: 'Socializace velkých podniků, 8hodinový pracovní den, sociální pojištění a odluka církve od státu.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_soci%C3%A1ln%C4%9B_demokratick%C3%A1_strana_d%C4%9Blnick%C3%A1'
       },
@@ -38,7 +38,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#16a34a',
         historicalPercentage: 9.7,
         historicalSeats: 28,
-        description: 'Vlivná strana sedláků a venkovského obyvatelstva. Klíčový pilíř stability první republiky, obhájce soukromého zemědělského vlastnictví.',
+        description: 'Klíčový politický pilíř meziválečné československé demokracie a nejsilnější nesocialistická formace. Její hlavní voličskou základnu tvořili samostatní rolníci, sedláci, venkovská inteligence a družstevníci. Pod pragmatickým vedením Antonína Švehly strana kombinovala obranu soukromého vlastnictví půdy a agrární cla s důslednou státotvorností a sociálním smírem. Byla motorem pozemkové reformy, která měla půdu šlechtických velkostatků rozdělit venkovskému lidu, avšak odmítala jakékoliv socialistické experimenty a kolektivizaci.',
         programHighlight: 'Půda do rukou rolníků, agrární cla proti levnému dovozu, zachování křesťanských tradic a řádu.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Republik%C3%A1nsk%C3%A1_strana_zem%C4%9Bd%C4%9Blsk%C3%A9ho_a_malorolnick%C3%A9ho_lidu'
       },
@@ -51,7 +51,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#eab308',
         historicalPercentage: 11.3,
         historicalSeats: 33,
-        description: 'Tradiční obhájce katolických věřících, církevních škol a rodiny. Hledala kompromis mezi sociální péčí a křesťanskou morálkou.',
+        description: 'Hlavní politický reprezentant katolicky orientovaného obyvatelstva, především malorolníků, venkovských řemeslníků, drobných úředníků a věřících dělníků na Moravě a ve východních Čechách. Vznikla v lednu 1919 sloučením katolických proudů pod vedením monsignora Jana Šrámka. V napjaté atmosféře proticírkevního radikalismu mladé republiky důsledně bránila pozice církve, církevní školy, náboženství ve školních osnovách a nedotknutelnost rodiny, přičemž v hospodářské oblasti razila křesťansko-sociální učení a solidaritu.',
         programHighlight: 'Obrana katolické církve proti sekularismu, podpora církevního školství a rodinná politika.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/KDU-%C4%8CSL'
       },
@@ -64,7 +64,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#f97316',
         historicalPercentage: 8.1,
         historicalSeats: 24,
-        description: 'Středolevicová reformní strana orientovaná na úředníky, řemeslníky a inteligenci. Silně vlastenecká a protirakouská.',
+        description: 'Středolevicová reformní strana s výrazným vlasteneckým profilem, orientovaná především na městskou inteligenci, úřednictvo, živnostníky a uvědomělé dělníky. Vznikla již před válkou jako národně sociální strana pod vedením Václava Klofáče. Hlásala socialismus zbavený marxistického internacionalismu a třídního boje, který stavěla na svébytném národním a humanistickém základě v tradici T. G. Masaryka. Patřila k nejradikálnějším zastáncům odluky církve od státu, sekulární školy a unitárního československého státu.',
         programHighlight: 'Socializace bez marxistického dogmatismu, jednotný národní stát a radikální protikatolický postoj.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_strana_n%C3%A1rodn%C4%9B_socialistick%C3%A1'
       },
@@ -77,7 +77,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#2563eb',
         historicalPercentage: 6.3,
         historicalSeats: 19,
-        description: 'Oporu nacházela u velkoprůmyslu, bank a národovecké inteligence. Hájila tvrdou měnu (Rašínova deflace) a ostrý odpor k bolševismu.',
+        description: 'Tradiční národně-liberální a konzervativní formace vedená Karlem Kramářem a prvním ministrem financí Aloisem Rašínem. Oporu nacházela u velkoprůmyslu, bankovního sektoru, velkoobchodu a národovecké měšťanské inteligence. Prosazovala hospodářský liberalismus, pevnou a stabilní měnu, striktní rozpočtovou disciplínu a ochranu soukromého podnikání. Byla nekompromisně protibolševická, prosazovala nostrifikaci (přenesení sídel podniků ze zahraničí do ČSR), přísný unitární stát a zahraničněpolitickou orientaci na Francii.',
         programHighlight: 'Silná a stabilní měna, ochrana soukromého vlastnictví, nostrifikace podniků a spojenectví s Francií.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_n%C3%A1rodn%C3%AD_demokracie'
       },
@@ -90,7 +90,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#b91c1c',
         historicalPercentage: 11.1,
         historicalSeats: 31,
-        description: 'Druhá nejsilnější strana v republice. Reprezentovala německé dělníky v pohraničí, bojovala za sociální práva a národnostní samosprávu.',
+        description: 'Nejsilnější politická strana německé menšiny v ČSR a celkově třetí nejsilnější poslanecký klub po volbách 1920. Reprezentovala německojazyčné dělnictvo v průmyslovém pohraničí (Sudetech). Ačkoliv byla ideově spřízněna s českou sociální demokracií a hájila marxistický program a dělnická práva, v otázce státoprávní zpočátku odmítala vznik unitárního Československa a požadovala právo na sebeurčení a národnostní samosprávu. Postupně pod vedením Ludwiga Czecha přešla k loajální spolupráci a stala se pilířem demokratického tábora.',
         programHighlight: 'Socialismus, národnostní rovnoprávnost pro Němce, odmítnutí čechoslovakismu a podpora autonomie.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/N%C4%9Bmeck%C3%A1_soci%C3%A1ln%C4%9B_demokratick%C3%A1_strana_d%C4%9Blnick%C3%A1_v_%C4%8Ceskoslovensk%C3%A9_republice'
       },
@@ -103,7 +103,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#15803d',
         historicalPercentage: 3.9,
         historicalSeats: 11,
-        description: 'Strana německých zemědělců a sedláků v Sudetech. Později se stala jednou z prvních německých „aktivistických“ stran spolupracujících s vládou.',
+        description: 'Konzervativní stavovská organizace sdružující německé rolníky, sedláky a venkovské majitele půdy v Sudetech. V roce 1920 se ostře vymezovala proti pozemkové reformě, kterou vnímala jako pokus o počeštění pohraničí a nespravedlivé vyvlastnění německých velkostatků bez tržní náhrady. Žádala ochranu zemědělské výroby a hospodářská cla. Pod vedením Franze Spiny se v druhé polovině 20. let stala průkopníkem tzv. německého aktivismu – vstoupila do československé vlády a loajálně spolupracovala na rozvoji státu.',
         programHighlight: 'Obrana německého venkova, odmítání konfiskace půdy bez spravedlivé náhrady, dovozní cla.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Bund_der_Landwirte'
       },
@@ -116,7 +116,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#854d0e',
         historicalPercentage: 6.8,
         historicalSeats: 12,
-        description: 'V roce 1920 kandidovala ve volebním svazku s ČSL. Požadovala naplnění Pittsburské dohody, svébytnost slovenského národa a obranu víry.',
+        description: 'Autonomistické hnutí reprezentující katolické slovenské obyvatelstvo, vedené charismatickým katolickým knězem Andrejem Hlinkou. Ve volbách 1920 kandidovala ještě v taktické unii s českou lidovou stranou pod hlavičkou ČSL, brzy se však plně osamostatnila. Hlásala nedílnou národní svébytnost Slováků, bojovala proti pražskému centralismu a ideologii jednotného „československého národa“. Žádala plné naplnění Pittsburské dohody, zákonodárnou autonomii pro Slovensko a důslednou ochranu katolické víry před pražským laicismem.',
         programHighlight: 'Zákonodárná autonomie Slovenska, obrana katolické církve proti pražskému laicismu a čechoslovakismu.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Hlinkova_slovensk%C3%A1_%C4%BEudov%C3%A1_strana'
       }
@@ -265,7 +265,7 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         color: '#dc2626',
         historicalPercentage: 31.05,
         historicalSeats: 93,
-        description: 'Vítěz voleb v českých zemích. Vystupovala jako tvůrce nového řádu, slibovala specifickou „československou cestu k socialismu“ bez kolchozů.',
+        description: 'Jednoznačný vítěz voleb v českých zemích (přes 40 % hlasů), který těžil z obrovské prestiže SSSR jako osvoboditele a z traumatické paměti mnichovské zrady. Pod vedením Klementa Gottwalda a Rudolfa Slánského vystupovala strana v umírněném, vlasteneckém tónu a slibovala specifickou „československou cestu k socialismu“ bez kolchozů a násilné kolektivizace. Oslovila dělnictvo, bezzemky osidlující vysídlené pohraničí i část inteligence. Držela v rukou klíčová ministerstva vnitra (bezpečnostní složky) a informací, což jí umožnilo systematicky připravovat půdu pro převrat v únoru 1948.',
         programHighlight: 'Pevné spojenectví se SSSR, dvouletý plán obnovy, příděl půdy v pohraničí rolníkům a monopol Národní fronty.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Komunistick%C3%A1_strana_%C4%8Ceskoslovenska'
       },
@@ -278,7 +278,7 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         color: '#f97316',
         historicalPercentage: 18.37,
         historicalSeats: 55,
-        description: 'Hlavní česká nekomunistická síla. Hájila odkaz T. G. Masaryka a Edvarda Beneše, usilovala o zachování svobody slova a vazeb na Západ.',
+        description: 'Hlavní česká nekomunistická a protitotalitní síla poválečného období, která navazovala na myšlenkový odkaz zakladatelů státu T. G. Masaryka a prezidenta Edvarda Beneše. Jejími čelnými představiteli byli Petr Zenkl, ministr spravedlnosti Prokop Drtina a ministr zahraničního obchodu Hubert Ripka. Opírala se o úředníky, učitele, živnostníky a svobodomyslnou městskou inteligenci. Důsledně bránila nezávislost soudnictví, svobodu tisku a parlamentní pluralitu. Hájila soukromé vlastnictví drobných a středních podniků a odmítala další vlny znárodňování po dekretech z roku 1945.',
         programHighlight: 'Zastavení dalšího znárodňování, právní stát, ochrana živností a rovnováha mezi Východem a Západem.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_strana_n%C3%A1rodn%C4%9B_socialistick%C3%A1'
       },
@@ -291,7 +291,7 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         color: '#eab308',
         historicalPercentage: 15.64,
         historicalSeats: 46,
-        description: 'Křesťansky orientovaná strana opírající se o moravský venkov a katolické věřící. Hájila svobodu náboženství a církevní školství.',
+        description: 'Tradiční křesťanskodemokratická strana, která byla jedinou povolenou nelevicovou formací v českých zemích v rámci Národní fronty. V čele stál zkušený předválečný politik a premiér exilové vlády v Londýně msgre. Jan Šrámek a František Hála. Silnou oporu měla na moravském venkově, mezi katolickými rolníky, věřícími a řemeslníky. Byla jedním z hlavních útočišť bývalých voličů zakázané agrární strany. Vystupovala jako nekompromisní obránce náboženské svobody, církevních škol a rodinných hodnot a varovala před marxistickou totalitou a protikřesťanským materialismem.',
         programHighlight: 'Obrana křesťanských rodinných hodnot, ochrana soukromého vlastnictví a svobodné volby bez diktátu.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/KDU-%C4%8CSL'
       },
@@ -304,7 +304,7 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         color: '#2563eb',
         historicalPercentage: 14.07,
         historicalSeats: 43,
-        description: 'Slovenský fenomén voleb 1946 (na Slovensku 62 %!). Sjednotila evangelíky i katolíky proti nástupu komunistické diktatury.',
+        description: 'Slovenský fenomén a symbol odporu proti totalitě ve volbách 1946. Vznikla během Slovenského národního povstání a před volbami uzavřela přelomovou tzv. Aprílovou dohodu, která sjednotila slovenské evangelíky i většinové katolíky do jednoho mohutného občanského bloku pod vedením Jozefa Lettricha a Jána Ursínyho. Na Slovensku dosáhla senzačního triumfu se ziskem 62 % hlasů a drtivě porazila komunisty. Hájila principy západní parlamentní demokracie, tržní hospodářství a slovenskou samosprávu. Právě proto se stala hlavním terčem komunistických provokací, infiltrací StB a následné likvidace.',
         programHighlight: 'Slovenská národní samospráva, obnova tržních principů, svoboda vyznání a hráz proti bolševismu.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Demokratick%C3%A1_strana_(Slovensko)'
       },
@@ -317,7 +317,7 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         color: '#ea580c',
         historicalPercentage: 12.05,
         historicalSeats: 37,
-        description: 'Hluboce rozpolcená strana mezi levicovým prokomunistickým křídlem (Fierlinger) a demokratickým protikomunistickým křídlem (Majer).',
+        description: 'Historická dělnická strana, která se po návratu z exilu ocitla v hlubokém ideovém a personálním rozkolu. Levicové křídlo pod vedením Zdeňka Fierlingera nekriticky spolupracovalo s komunisty a prosazovalo těsný marxistický blok, zatímco demokratické křídlo vedené Václavem Majerem usilovalo o uchování nezávislého demokratického socialismu a spojenectví s národními socialisty a lidovci. Tento vnitřní rozpor stranu fatálně paralyzoval a vedl k volebnímu zklamání (pouhých 12 % hlasů). V únoru 1948 byla strana prokomunistickým křídlem násilně sloučena s KSČ.',
         programHighlight: 'Hospodářské plánování, sociální jistoty pracujících, zachování parlamentních procedur.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_soci%C3%A1ln%C4%9B_demokratick%C3%A1_strana_d%C4%9Blnick%C3%A1'
       },
@@ -330,7 +330,7 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         color: '#991b1b',
         historicalPercentage: 6.89,
         historicalSeats: 21,
-        description: 'Slovenská organizace KSČ. Na Slovensku utrpěla porážku od Demokratické strany, následně s pomocí pražských komunistů usilovala o likvidaci DS.',
+        description: 'Nominálně samostatná, ve skutečnosti však plně podřízená slovenská odnož KSČ vedená Viliamem Širokým, Gustávem Husákem a Karolem Šmidkem. Těžila ze své účasti v Slovenském národním povstání, avšak v hluboce věřícím slovenském prostředí utrpěla od Demokratické strany drtivou volební porážku (získala jen 30 % hlasů na Slovensku). Poražení slovenští komunisté se odmítli smířit s výsledkem a ve spojení s Gottwaldovým pražským ústředím prosadili třetí pražskou dohodu, která radikálně okleštila pravomoci slovenských orgánů a podřídila Sbor pověřenců centrální vládě.',
         programHighlight: 'Socializace, centralizace moci v rukou komunistů a potlačení vlivu církve na Slovensku.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Komunistick%C3%A1_strana_Slovenska_(1939)'
       }
@@ -479,7 +479,7 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         color: '#2563eb',
         historicalPercentage: 36.05,
         historicalSeats: 68,
-        description: 'Vítěz voleb v ČR. Hnutí zrozené v sametové revoluci, které sjednotilo disidenty, ekonomy i širokou veřejnost k demontáži komunismu.',
+        description: 'Široké spontánní občanské hnutí, které se zrodilo během studentských a divadelních demonstrací v listopadu 1989 jako hlavní mluvčí sametové revoluce. Sjednotilo disidenty z Charty 77, reformní komunisty z roku 1968, nezávislé ekonomy i nestranické osobnosti. V čele stáli Václav Klaus, Jiří Dienstbier, Jan Urban či Petr Pithart. V prvních svobodných volbách v červnu 1990 triumfovalo se ziskem 53 % hlasů v ČR. Jeho prioritou byla obnova pluralitní demokracie, právního státu a rychlý návrat Československa do svobodné Evropy prostřednictvím zásadní transformace centrálně plánované ekonomiky na tržní hospodářství.',
         programHighlight: 'Návrat do Evropy, právní stát, rychlá privatizace a tržní ekonomika, svoboda jednotlivce.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Ob%C4%8Dansk%C3%A9_f%C3%B3rum'
       },
@@ -492,7 +492,7 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         color: '#0284c7',
         historicalPercentage: 8.56,
         historicalSeats: 19,
-        description: 'Slovenský protějšek OF, vítěz voleb na Slovensku. Bojovala za demokracii, ale s větším citem pro specifické sociální a národní potřeby Slovenska.',
+        description: 'Slovenský revoluční partner Občanského fóra, který vedl sametovou revoluci na Slovensku a v červnu 1990 tam s přehledem vyhrál volby (získal 32,5 % hlasů). Vzniklo v bratislavské Umelecké besedě a jeho vůdčími postavami byli sociolog Fedor Gál, charismatický herec Milan Kňažko, premiér Vladimír Mečiar a federální premiér Marián Čalfa. Hnutí prosazovalo demokratizaci, lidská práva a integraci do evropských struktur, přičemž kladlo důraz na zrovnoprávnění slovenské národní identity v moderní federaci a na sociální citlivost ekonomických reforem v podmínkách zranitelného slovenského průmyslu.',
         programHighlight: 'Demokratizace společnosti, federalismus s respektem k slovenské svébytnosti a sociálně citlivá transformace.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Verejno%C4%BE_proti_n%C3%A1siliu'
       },
@@ -505,7 +505,7 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         color: '#dc2626',
         historicalPercentage: 13.59,
         historicalSeats: 23,
-        description: 'Bývalá státostrana po ztrátě mocenského monopolu. Hájila sociální jistoty, sociální stát a varovala před masovou nezaměstnaností a výprodejem majetku.',
+        description: 'Původní státostrana, která po listopadu 1989 ztratila ústavní monopol na moc a ocitla se v opozici. Prošla taktickou federalizací (vznikla KSČM v Česku a KSS na Slovensku) a do jejího čela se postavili Ladislav Adamec, Vasil Mohorita a filmový režisér Jiří Svoboda. Volební zisk přes 13,5 % hlasů potvrdil existenci silného disciplinovaného elektorátu bývalých členů, aparátčíků i občanů obávajících se kapitalismu. Strana nabízela reformní komunismus a demokratický socialismus, bránila sociální jistoty a varovala před masovou nezaměstnaností, plošnými lustracemi a výprodejem národního bohatství zahraničnímu kapitálu.',
         programHighlight: 'Zachování sociálních jistot, odpor k divoké privatizaci a plošným lustracím, vojenská neutralita.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Komunistick%C3%A1_strana_%C4%8Ceskoslovenska'
       },
@@ -518,7 +518,7 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         color: '#eab308',
         historicalPercentage: 10.84,
         historicalSeats: 20,
-        description: 'Koalice lidovců a křesťanských aktivistů. V ČR byla těsně před volbami poškozena aférou kolem Josefa Bartončíka, na Slovensku získalo KDH silnou pozici.',
+        description: 'Předvolební koalice křesťanskodemokratických sil v ČSFR. V českých zemích tvořila KDU volební svazek tradiční Československé strany lidové (ČSL), Křesťanskodemokratické strany Václava Bendy (KDS) a nezávislých křesťanů. Těsně před volbami v době volebního moratoria ji těžce zasáhla aféra jejího lídra Josefa Bartončíka, obviněného z tajné spolupráce s StB. Na Slovensku naopak samostatné KDH vedené disidentem Jánem Čarnogurským zaznamenalo obrovský úspěch (druhá nejsilnější strana s 19 % hlasů). Hnutí hájilo křesťanskou etiku, restituce zabaveného majetku, ochranu tradiční rodiny a sociálně-tržní hospodářství.',
         programHighlight: 'Restituce církevního a soukromého majetku, ochrana rodiny, křesťanská morálka a sociálně-tržní řád.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/KDU-%C4%8CSL'
       },
@@ -531,7 +531,7 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         color: '#9333ea',
         historicalPercentage: 5.39,
         historicalSeats: 9,
-        description: 'Velké překvapení voleb na Moravě (v Jihomoravském kraji téměř 30 %!). Požadovalo zemské zřízení a konec pragocentrismu.',
+        description: 'Fenomenální překvapení voleb 1990 a svébytný hlas Moravy a Slezska. Vzniklo na vlně odporu proti centralistickému řízení z Prahy a za jeho raketovým vzestupem stál brněnský psycholog a disident Boleslav Bárta. Na Moravě získalo masovou podporu (v Jihomoravském kraji téměř 30 % hlasů) a celostátně obsadilo 9 křesel ve Sněmovně lidu a 16 mandátů v České národní radě. Požadovalo nápravu zrušení zemského zřízení z roku 1949, obnovu moravskoslezské samosprávy, zemský sněm, daňovou autonomii a přeměnu ČSFR na trojspolkovou federaci (Čechy, Morava a Slezsko, Slovensko).',
         programHighlight: 'Obnova moravskoslezské samosprávy, trojfederace (Čechy, Morava a Slezsko, Slovensko) a zemský sněm.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Hnut%C3%AD_za_samospr%C3%A1vnou_demokracii_%E2%80%93_Spole%C4%8Dnost_pro_Moravu_a_Slezsko'
       },
@@ -544,7 +544,7 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         color: '#84cc16',
         historicalPercentage: 3.67,
         historicalSeats: 6,
-        description: 'Radikálně národní slovenská strana. Jako jediná parlamentní síla v roce 1990 otevřeně žádala samostatné Slovensko a konec federace.',
+        description: 'Národně orientovaná strana, která se přihlásila k odkazu historické SNS z 19. století a rychle obsadila radikální křídlo slovenské politické scény. V jejím čele stáli Víťazoslav Móric a Stanislav Pánis. V prvních volbách získala 14 % hlasů na Slovensku a jako jediná relevantní parlamentní formace otevřeně zpochybňovala smysl společného československého státu. Požadovala úplné osamostatnění Slovenska, uzákonění slovenštiny jako jediného úředního jazyka bez výjimek pro menšiny a svrchovanou slovenskou reprezentaci v mezinárodních institucích.',
         programHighlight: 'Plná státní suverenita Slovenska, slovenština jako jediný úřední jazyk a samostatné vystupování v zahraničí.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Slovensk%C3%A1_n%C3%A1rodn%C3%A1_strana'
       },
@@ -557,7 +557,7 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         color: '#ea580c',
         historicalPercentage: 2.68,
         historicalSeats: 0,
-        description: 'Bývalá strana Národní fronty, která se během listopadu 1989 postavila režimu (propůjčila balkón Melantrichu). Těsně nepřekročila 5% klauzuli.',
+        description: 'Historická národně-sociální strana, která v dobách komunistického režimu přežívala v Národní frontě jako satelitní formace. V listopadu 1989 však sehrála slavnou roli, když se její vedení postavilo režimu a propůjčilo balkón svého nakladatelství Melantrich na Václavském náměstí Václavu Havlovi a Občanskému fóru pro masové demonstrace. Ve svobodné soutěži v červnu 1990 ji vedli Jiří Vyvadil a Milan Nevima. Nabízela středový národní reformismus, obranu sociálních práv a zájmy zaměstnanců, avšak se ziskem 2,7 % hlasů v ČR těsně nepřekročila nově zavedenou 5% uzavírací klauzuli.',
         programHighlight: 'Postupná sociálně-tržní transformace, posílení národní hrdosti a ochrana zaměstnanců.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_strana_socialistick%C3%A1'
       },
@@ -570,7 +570,7 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         color: '#16a34a',
         historicalPercentage: 3.1,
         historicalSeats: 0,
-        description: 'Reagovala na děsivý stav životního prostředí v komunistickém ČSSR (smogy, kyselé deště, devastace Krušných hor).',
+        description: 'Ekologická formace zrozená bezprostředně po sametové revoluci v reakci na katastrofální ekologickou bilanci čtyřicetileté komunistické vlády – zdevastované ovzduší, kyselé deště, zničené lesy v Krušných horách a chronicky nemocné děti v uhelných pánvích severních Čech. Zpočátku se těšila masivním sympatiím veřejnosti, před volbami ji však oslabily vnitřní spory a ideová neujasněnost mezi pravicovými a levicovými proudy. S výsledkem 3,1 % hlasů zůstala těsně pod 5% hranicí, avšak její témata ochrany klimatu a čistého vzduchu zásadně ovlivnila vládní program nového kabinetu.',
         programHighlight: 'Okamžité zastavení těžby uhlí v severních Čechách, ochrana ovzduší a pitné vody jako vládní priorita.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Strana_zelen%C3%BDch'
       }

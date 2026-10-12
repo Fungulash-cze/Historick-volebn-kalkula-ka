@@ -220,7 +220,7 @@ function renderHomeView(): string {
                   ${meta.title}
                 </h2>
                 
-                <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed mb-3">
+                <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed mb-3 text-justify [hyphens:auto]">
                   ${meta.stakes}
                 </p>
 
@@ -289,7 +289,7 @@ function renderHomeView(): string {
         <h3 class="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-4">
           O projektu a historických datech
         </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-zinc-600 leading-relaxed">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-zinc-600 leading-relaxed text-justify [hyphens:auto]">
           <div>
             <strong class="text-zinc-900 block mb-1 font-semibold">15 dobových otázek pro každý rok</strong>
             Otázky pokrývají klíčová hospodářská, společenská, zahraničněpolitická i státoprávní témata, která určovala ráz volebních kampaní.
@@ -372,7 +372,7 @@ function renderQuizView(): string {
           </button>
 
           ${state.showHistoricalNote ? `
-            <div class="mt-3 p-3.5 bg-zinc-50 border border-zinc-200 rounded-lg text-xs text-zinc-700 leading-relaxed animate-fadeIn">
+            <div class="mt-3 p-3.5 bg-zinc-50 border border-zinc-200 rounded-lg text-xs text-zinc-700 leading-relaxed animate-fadeIn text-justify [hyphens:auto]">
               <strong>Historické pozadí:</strong> ${q.historicalNote}
             </div>
           ` : ''}
@@ -492,10 +492,10 @@ function renderResultsView(): string {
               <div class="text-xs text-zinc-400 mb-3 font-medium">
                 ${topMatch.party.ideology} · Osobnosti: <strong class="text-zinc-200">${topMatch.party.leaders.join(', ')}</strong>
               </div>
-              <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal mb-4">
+              <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal mb-4 text-justify [hyphens:auto]">
                 ${topMatch.party.description}
               </p>
-              <div class="p-3 rounded-lg bg-zinc-800 text-xs text-zinc-200 border border-zinc-700">
+              <div class="p-3 rounded-lg bg-zinc-800 text-xs text-zinc-200 border border-zinc-700 text-justify [hyphens:auto]">
                 <strong>Programové pilíře:</strong> ${topMatch.party.programHighlight}
               </div>
             </div>
@@ -675,11 +675,11 @@ function renderResultsView(): string {
         <h3 class="text-base font-bold text-zinc-900 mb-1">
           Jak tyto volby v roce ${state.year} skutečně dopadly?
         </h3>
-        <p class="text-xs text-zinc-600 leading-relaxed mb-5">
+        <p class="text-xs text-zinc-600 leading-relaxed mb-5 text-justify [hyphens:auto]">
           ${currentElection.historicalContext}
         </p>
 
-        <div class="p-4 bg-zinc-50 rounded-lg border border-zinc-200 text-xs text-zinc-800 leading-relaxed mb-6">
+        <div class="p-4 bg-zinc-50 rounded-lg border border-zinc-200 text-xs text-zinc-800 leading-relaxed mb-6 text-justify [hyphens:auto]">
           <strong>Povolební vývoj:</strong> ${currentElection.outcomeSummary}
         </div>
 
@@ -862,7 +862,7 @@ function renderPartySlider(): string {
                   </span>
                 </div>
 
-                <p class="text-[11px] text-zinc-600 line-clamp-2 leading-relaxed mb-3">
+                <p class="text-[11px] text-zinc-600 line-clamp-3 leading-relaxed mb-3 text-justify [hyphens:auto]">
                   ${party.description}
                 </p>
               </div>
@@ -958,13 +958,13 @@ function renderPartyModal(): string {
         <!-- Historický popis (Wikipedie data) -->
         <div class="mb-4 text-xs sm:text-sm text-zinc-700 leading-relaxed space-y-2">
           <span class="text-zinc-400 uppercase tracking-wider font-bold block text-xs">Historický profil & kontext</span>
-          <p>
+          <p class="text-justify [hyphens:auto]">
             ${party.description}
           </p>
         </div>
 
         <!-- Programový pilíř -->
-        <div class="p-3.5 rounded-lg bg-zinc-100 border border-zinc-200 text-xs text-zinc-800 leading-relaxed mb-6">
+        <div class="p-3.5 rounded-lg bg-zinc-100 border border-zinc-200 text-xs text-zinc-800 leading-relaxed mb-6 text-justify [hyphens:auto]">
           <strong class="text-zinc-900">Hlavní programová teze:</strong> ${party.programHighlight}
         </div>
 
@@ -1049,7 +1049,7 @@ function renderSystemModal(): string {
               </svg>
               <span>Zastupitelské těleso (Parlament)</span>
             </div>
-            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed text-justify [hyphens:auto]">
               ${sys.body}
             </p>
           </div>
@@ -1062,7 +1062,7 @@ function renderSystemModal(): string {
               </svg>
               <span>Volební systém & přepočet mandátů</span>
             </div>
-            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed text-justify [hyphens:auto]">
               ${sys.system}
             </p>
           </div>
@@ -1078,7 +1078,7 @@ function renderSystemModal(): string {
                 </svg>
                 <span>Kdo mohl volit (Aktivní právo)</span>
               </div>
-              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed text-justify [hyphens:auto]">
                 ${sys.franchise}
               </p>
             </div>
@@ -1091,7 +1091,7 @@ function renderSystemModal(): string {
                 </svg>
                 <span>Kdo mohl kandidovat (Pasivní právo)</span>
               </div>
-              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed text-justify [hyphens:auto]">
                 ${sys.eligibility}
               </p>
             </div>
@@ -1110,7 +1110,7 @@ function renderSystemModal(): string {
               ${sys.trivia.map(t => `
                 <li class="flex items-start gap-2">
                   <span class="text-zinc-400 font-bold select-none">•</span>
-                  <span>${t}</span>
+                  <span class="text-justify [hyphens:auto]">${t}</span>
                 </li>
               `).join('')}
             </ul>
