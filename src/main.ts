@@ -170,10 +170,10 @@ function renderHomeView(): string {
       <!-- Minimalistický Editorial Úvod -->
       <section class="max-w-2xl mb-10">
         <h1 class="text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight leading-tight mb-3">
-          Která historická strana odpovídá vašim názorům?
+          Koho byste volili v minulosti?
         </h1>
         <p class="text-sm sm:text-base text-zinc-600 leading-relaxed font-normal">
-          Vyberte si jeden ze tří klíčových parlamentních volebních roků. Zodpovězte 15 otázek vycházejících z autentických dobových programů a porovnejte své postoje se všemi tehdejšími kandidujícími stranami.
+          Zvolte si jedny ze tří zlomových voleb. Odpovězte na 15 dobových otázek a zjistěte, ke komu byste tehdy měli nejblíž.
         </p>
       </section>
 
@@ -269,7 +269,7 @@ function renderHomeView(): string {
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-zinc-600 leading-relaxed">
           <div>
             <strong class="text-zinc-900 block mb-1 font-semibold">15 dobových otázek pro každý rok</strong>
-            Otázky pokrývají klíčová hospodářská, společenská, zahraničněpolitická i státoprávní témata, která tehdy určovala ráz volebních kampaní.
+            Otázky pokrývají klíčová hospodářská, společenská, zahraničněpolitická i státoprávní témata, která určovala ráz volebních kampaní.
           </div>
           <div>
             <strong class="text-zinc-900 block mb-1 font-semibold">Historicky doložené postoje stran</strong>
@@ -985,13 +985,13 @@ function renderFooter(): string {
   return `
     <footer class="border-t border-zinc-200 py-8 px-4 sm:px-6 text-zinc-500 text-xs bg-[#f4f4f5]">
       <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div class="text-[11px] text-zinc-500">
+          vytvořil po večerech Adam Simota :)
+        </div>
         <div>
           <span class="font-bold text-zinc-900">Historická volební kalkulačka (HVK)</span>
           <span class="text-zinc-300 mx-2">·</span>
           <span>1920 · 1946 · 1990</span>
-        </div>
-        <div class="text-[11px] text-zinc-400">
-          Založeno na dobových volebních programech a historických pramenech
         </div>
       </div>
     </footer>
