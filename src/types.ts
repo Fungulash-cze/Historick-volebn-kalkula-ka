@@ -21,6 +21,7 @@ export interface Party {
   historicalSeats: number;
   description: string;
   programHighlight: string;
+  wikipediaUrl?: string;
 }
 
 export interface ElectionMeta {

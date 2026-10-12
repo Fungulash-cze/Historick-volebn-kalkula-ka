@@ -7,9 +7,9 @@ export const ELECTIONS_DATA: Record<1920 | 1946 | 1990, ElectionMeta> = {
     subtitle: 'První parlamentní volby v nově zrozené Československé republice',
     date: '18. a 25. dubna 1920',
     turnout: '89,6 %',
-    stakes: 'Rozhodovalo se o samotném charakteru mladého státu: zvítězí socialistická vize nového řádu, agrárně-venkovský konzervatismus, nebo liberálně-kapitálový národní stát?',
+    stakes: 'Rozhodovalo se o samotném charakteru mladého státu: zvítězí socialistická vize nového řádu, agrárně-venkovský konzervatismus, nebo občansko-demokratická a národně-konzervativní vize státu?',
     atmosphereQuote: '„Pryč od Vídně, pryč od Říma! Republika musí být sociálně spravedlivá a svobodná!“ – dobové heslo',
-    historicalContext: `V dubnu 1920 se konaly vůbec první parlamentní volby samostatného Československa podle nové demokratické Ústavy z února 1920. Po rozpadu habsburské monarchie a kruté světové válce čelila republika obrovským výzvám: hyperinflaci, nedostatku potravin a uhlí, radikalizaci dělnictva ovlivněného bolševickou revolucí v Rusku a napětí s početnou německou a maďarskou menšinou, které se ocitly v novém státě nedobrovolně.
+    historicalContext: `V dubnu 1920 se konaly vůbec první parlamentní volby samostatného Československa podle nové demokratické ústavy z února 1920, které nahradily dosavadní nevolené Revoluční národní shromáždění. Po rozpadu habsburské monarchie a kruté světové válce čelila republika obrovským výzvám: hyperinflaci, nedostatku potravin a uhlí, radikalizaci dělnictva ovlivněného bolševickou revolucí v Rusku a napětí s početnou německou a maďarskou menšinou, které se ocitly v novém státě nedobrovolně.
 
 Mezi hlavní témata patřila pozemková reforma (rozdělení šlechtických velkostatků), odluka církve od státu, 8hodinová pracovní doba a postavení Slovenska v novém unitárním státě. Zároveň to byly první celostátní volby v naší historii, v nichž měly ženy plné a rovné volební právo.`,
     outcomeSummary: `Volby přinesly triumf levice. Sociální demokraté (ČSSD) vedení Vlastimilem Tusarem získali přes 25,7 % hlasů a stali se nejsilnější stranou. Společně s německou sociální demokracií (DSAP) měla levice v parlamentu téměř většinu. Tusar sestavil koaliční vládu „rudozelené koalice“ (sociální demokraté a agrárníci).
@@ -26,11 +26,12 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         historicalPercentage: 25.7,
         historicalSeats: 74,
         description: 'Hlavní strana průmyslového dělnictva. Požadovala socializaci klíčových odvětví, silnou ochranu pracujících a rozsáhlou pozemkovou reformu.',
-        programHighlight: 'Socializace velkých podniků, 8hodinový pracovní den, sociální pojištění a odluka církve od státu.'
+        programHighlight: 'Socializace velkých podniků, 8hodinový pracovní den, sociální pojištění a odluka církve od státu.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_soci%C3%A1ln%C4%9B_demokratick%C3%A1_strana_d%C4%9Blnick%C3%A1'
       },
       {
         id: 'rszml',
-        shortName: 'RSZML (Agrárníci)',
+        shortName: 'RSČV (Agrárníci)',
         fullName: 'Republikánská strana československého venkova',
         ideology: 'Agrarismus, venkovský konzervatismus, ochranářství',
         leaders: ['Antonín Švehla', 'František Udržal', 'Karel Prášek'],
@@ -38,7 +39,8 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         historicalPercentage: 9.7,
         historicalSeats: 28,
         description: 'Vlivná strana sedláků a venkovského obyvatelstva. Klíčový pilíř stability první republiky, obhájce soukromého zemědělského vlastnictví.',
-        programHighlight: 'Půda do rukou rolníků, agrární cla proti levnému dovozu, zachování křesťanských tradic a řádu.'
+        programHighlight: 'Půda do rukou rolníků, agrární cla proti levnému dovozu, zachování křesťanských tradic a řádu.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Republik%C3%A1nsk%C3%A1_strana_zem%C4%9Bd%C4%9Blsk%C3%A9ho_a_malorolnick%C3%A9ho_lidu'
       },
       {
         id: 'csl',
@@ -50,31 +52,34 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         historicalPercentage: 11.3,
         historicalSeats: 33,
         description: 'Tradiční obhájce katolických věřících, církevních škol a rodiny. Hledala kompromis mezi sociální péčí a křesťanskou morálkou.',
-        programHighlight: 'Obrana katolické církve proti sekularismu, podpora církevního školství a rodinná politika.'
+        programHighlight: 'Obrana katolické církve proti sekularismu, podpora církevního školství a rodinná politika.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/KDU-%C4%8CSL'
       },
       {
         id: 'csns',
-        shortName: 'ČSNS (Národní soc.)',
+        shortName: 'ČSS (Socialisté)',
         fullName: 'Československá strana socialistická',
         ideology: 'Národní socialismus, vlastenectví, reformismus',
         leaders: ['Václav Klofáč', 'Jiří Stříbrný', 'Emil Franke'],
         color: '#f97316',
         historicalPercentage: 8.1,
         historicalSeats: 24,
-        description: 'Neklasová socialistická strana orientovaná na úředníky, řemeslníky a inteligenci. Silně vlastenecká a protirakouská.',
-        programHighlight: 'Socializace bez marxistického dogmatismu, jednotný národní stát a radikální protikatolický postoj.'
+        description: 'Středolevicová reformní strana orientovaná na úředníky, řemeslníky a inteligenci. Silně vlastenecká a protirakouská.',
+        programHighlight: 'Socializace bez marxistického dogmatismu, jednotný národní stát a radikální protikatolický postoj.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_strana_n%C3%A1rodn%C4%9B_socialistick%C3%A1'
       },
       {
         id: 'csnd',
         shortName: 'ČsND (Národní dem.)',
         fullName: 'Československá národní demokracie',
-        ideology: 'Národní liberalismus, konzervatismus, velkokapitál',
+        ideology: 'Národní liberalismus, konzervatismus, hospodářský liberalismus',
         leaders: ['Karel Kramář', 'Alois Rašín', 'Viktor Dyk'],
         color: '#2563eb',
         historicalPercentage: 6.3,
         historicalSeats: 19,
-        description: 'Reprezentantka velkoprůmyslu, bank a národovecké inteligence. Hájila tvrdou měnu (Rašínova deflace) a ostrý odpor k bolševismu.',
-        programHighlight: 'Silná a stabilní měna, ochrana soukromého vlastnictví, nostrifikace podniků a spojenectví s Francií.'
+        description: 'Oporu nacházela u velkoprůmyslu, bank a národovecké inteligence. Hájila tvrdou měnu (Rašínova deflace) a ostrý odpor k bolševismu.',
+        programHighlight: 'Silná a stabilní měna, ochrana soukromého vlastnictví, nostrifikace podniků a spojenectví s Francií.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_n%C3%A1rodn%C3%AD_demokracie'
       },
       {
         id: 'dsap',
@@ -86,7 +91,8 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         historicalPercentage: 11.1,
         historicalSeats: 31,
         description: 'Druhá nejsilnější strana v republice. Reprezentovala německé dělníky v pohraničí, bojovala za sociální práva a národnostní samosprávu.',
-        programHighlight: 'Socialismus, národnostní rovnoprávnost pro Němce, odmítnutí čechoslovakismu a podpora autonomie.'
+        programHighlight: 'Socialismus, národnostní rovnoprávnost pro Němce, odmítnutí čechoslovakismu a podpora autonomie.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/N%C4%9Bmeck%C3%A1_soci%C3%A1ln%C4%9B_demokratick%C3%A1_strana_d%C4%9Blnick%C3%A1_v_%C4%8Ceskoslovensk%C3%A9_republice'
       },
       {
         id: 'bdl',
@@ -98,11 +104,12 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         historicalPercentage: 3.9,
         historicalSeats: 11,
         description: 'Strana německých zemědělců a sedláků v Sudetech. Později se stala jednou z prvních německých „aktivistických“ stran spolupracujících s vládou.',
-        programHighlight: 'Obrana německého venkova, odmítání konfiskace půdy bez spravedlivé náhrady, dovozní cla.'
+        programHighlight: 'Obrana německého venkova, odmítání konfiskace půdy bez spravedlivé náhrady, dovozní cla.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Bund_der_Landwirte'
       },
       {
         id: 'sls',
-        shortName: 'SĽS (Hlinkovci)',
+        shortName: 'SĽS (Ľudovci)',
         fullName: 'Slovenská ľudová strana',
         ideology: 'Slovenský autonomismus, křesťanský konzervatismus',
         leaders: ['Andrej Hlinka', 'Ferdiš Juriga', 'Florián Tománek'],
@@ -110,15 +117,16 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         historicalPercentage: 6.8,
         historicalSeats: 12,
         description: 'V roce 1920 kandidovala ve volebním svazku s ČSL. Požadovala naplnění Pittsburské dohody, svébytnost slovenského národa a obranu víry.',
-        programHighlight: 'Zákonodárná autonomie Slovenska, obrana katolické církve proti pražskému laicismu a čechoslovakismu.'
+        programHighlight: 'Zákonodárná autonomie Slovenska, obrana katolické církve proti pražskému laicismu a čechoslovakismu.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Hlinkova_slovensk%C3%A1_%C4%BEudov%C3%A1_strana'
       }
     ],
     questions: [
       {
         id: 1,
         category: 'Hospodářství a půda',
-        statement: 'Veškerá zemědělská půda velkostatků nad 150 hektarů orné půdy (nebo 250 ha celkem) musí být zabavena a přidělena bezzemkům a drobným rolníkům.',
-        historicalNote: 'Záborový zákon z dubna 1919 byl jedním z nejradikálnějších v Evropě. Postihl hlavně cizí (rakouskou a německou) šlechtu a církev.',
+        statement: 'Rozsáhlé velkostatky šlechty a církve musí být státem plošně zabaveny a rozděleny mezi bezzemky a drobné rolníky.',
+        historicalNote: 'Agrárníci a socialisté zabírání nadšeně podporovali. Národní demokraté varovali před propadem produkce na velkostatcích, němečtí agrárníci (BdL) byli proti, protože to postihlo německé majitele. Lidovcům vadilo zabavování církevní půdy, ale jejich voliči (rolníci) půdu chtěli.',
         partyStances: { cssd: 1, rszml: 1, csl: 0, csns: 1, csnd: -1, dsap: 1, bdl: -1, sls: 0 }
       },
       {
@@ -131,9 +139,9 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
       {
         id: 3,
         category: 'Sociální práva',
-        statement: 'Zákonná osmihodinová pracovní doba a povinné nemocenské pojištění pro všechny dělníky musí být nekompromisně vymáhány státem bez výjimek.',
-        historicalNote: 'ČSR zavedla 8hodinový pracovní den již v prosinci 1918 jako jedna z prvních zemí na světě, což průmyslníci kritizovali kvůli poklesu zisků.',
-        partyStances: { cssd: 1, rszml: 0, csl: 1, csns: 1, csnd: 0, dsap: 1, bdl: 0, sls: 1 }
+        statement: 'Zákonná osmihodinová pracovní doba musí být nekompromisně vymáhána státem bez jakýchkoli výjimek pro zaměstnavatele.',
+        historicalNote: 'Levicové strany byly pro nekompromisní vymáhání. Agrárníci (česko-slovenští i němečtí) sice zákon respektovali, ale tvrdě lobbovali za výjimky pro zemědělství (např. během žní). Národní demokraté chtěli výjimky pro průmysl, lidovci hledali kompromis.',
+        partyStances: { cssd: 1, rszml: -1, csl: 0, csns: 1, csnd: -1, dsap: 1, bdl: -1, sls: 0 }
       },
       {
         id: 4,
@@ -201,8 +209,8 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
       {
         id: 13,
         category: 'Vztah k Sovětskému Rusku',
-        statement: 'Československo by mělo diplomaticky uznat Sovětské Rusko a dělnictvo by se mělo solidarizovat s revolučním proletariátem.',
-        historicalNote: 'Otázka podpory bolševického Ruska v polsko-sovětské válce roku 1920 rozštěpila levici a vedla ke vzniku komunistické frakce.',
+        statement: 'Československo by mělo neprodleně diplomaticky uznat bolševické Sovětské Rusko a navázat s ním přátelské vztahy.',
+        historicalNote: 'Pravice a střed (Kramář, Švehla) bolševismus ostře odmítali. ČSSD se v této otázce v roce 1920 vnitřně štěpila na demokratické a radikální komunistické křídlo. Němečtí sociální demokraté (DSAP) tehdy stáli více nalevo a solidaritu podporovali.',
         partyStances: { cssd: 0, rszml: -1, csl: -1, csns: -1, csnd: -1, dsap: 1, bdl: -1, sls: -1 }
       },
       {
@@ -214,10 +222,10 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
       },
       {
         id: 15,
-        category: 'Volební právo a rovnost',
-        statement: 'Zavedení všeobecného volebního práva pro ženy bez jakéhokoli majetkového či vzdělanostního censu je nezvratným úspěchem demokracie.',
-        historicalNote: 'Československá ústava 1920 zaručila rovná politická práva ženám, což podporovala většina demokratického spektra.',
-        partyStances: { cssd: 1, rszml: 1, csl: 1, csns: 1, csnd: 1, dsap: 1, bdl: 1, sls: 1 }
+        category: 'Parlament a Senát',
+        statement: 'Parlament by měl mít pouze jednu komoru, nikoliv druhou brzdu v podobě elitářského Senátu.',
+        historicalNote: 'Levicové strany (ČSSD, ČSNS, DSAP) považovaly Senát za zbytečnou a nedemokratickou konzervativní brzdu, která měla tlumit vůli lidu. Pravice a střed (Agrárníci, Národní demokraté Karla Kramáře, Lidovci) naopak ustavení Senátu tvrdě prosazovali jako pojistku proti revolučním náladám a unáhleným zákonům.',
+        partyStances: { cssd: 1, rszml: -1, csl: -1, csns: 1, csnd: -1, dsap: 1, bdl: -1, sls: -1 }
       }
     ]
   },
@@ -227,14 +235,14 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
     subtitle: 'Poslední částečně svobodné volby před čtyřiceti lety komunistické totality',
     date: '26. května 1946',
     turnout: '94,0 %',
-    stakes: 'Rozhodovalo se o geopolitickém a mocenském směřování země: zůstane Československo pluralitní demokracií a mostem na Západ, nebo se stane vazalem Sovětského svazu?',
+    stakes: 'Rozhodovalo se o geopolitickém a mocenském směřování země: zůstane Československo pluralitní demokracií a mostem na Západ, nebo se stane součástí sovětské sféry vlivu s omezenou suverenitou?',
     atmosphereQuote: '„Se Sovětským svazem na věčné časy a nikdy jinak!“ vs. „Za svobodu a křesťanskou kulturu!“',
     historicalContext: `Volby v květnu 1946 probíhaly v jedinečné a vypjaté atmosféře těsně po skončení druhé světové války. V zemi panovala vděčnost Sovětskému svazu za osvobození od nacistické okupace a zároveň rozhořčení ze zrady západních mocností v Mnichově 1938. 
 
 Politická scéna byla zásadně omezena systémem tzv. Národní fronty: předválečné pravicové strany (především agrárníci a národní sjednocení) byly zakázány pod záminkou kolaborace. Probíhal masový odsun téměř 3 milionů Němců, konfiskace jejich majetku a osidlování pohraničí. Klíčový těžký průmysl, doly a banky byly již od října 1945 znárodněny Benešovými dekrety. Komunisté (KSČ) pod vedením Klementa Gottwalda vystupovali v roli vlastenců hájících drobné živnostníky a sedláky, zatímco demokratické strany (ČSNS, ČSL a slovenská Demokratická strana) se snažily bránit zbytek občanských svobod a parlamentní pluralitu.`,
     outcomeSummary: `KSČ v českých zemích drtivě zvítězila se ziskem 40,17 % hlasů (celostátně 31,05 %). Na Slovensku však došlo k politickému zemětřesení: nekomunistická Demokratická strana (DS) získala 62 % hlasů a porazila slovenské komunisty. 
 
-Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunisté obsadili klíčová ministerstva vnitra (SNB), informací, zemědělství a financí. Vítězství demokratů na Slovensku komunisté neutralizovali tzv. Třetí pražskou dohodou, která omezila pravomoci slovenských orgánů. Výsledek voleb 1946 otevřel komunistům přímou cestu k ovládnutí bezpečnostního aparátu a k definitivnímu uchvácení moci během komunistického převratu v únoru 1948.`,
+Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunisté obsadili klíčová ministerstva vnitra (SNB), informací, zemědělství a financí. Vítězství demokratů na Slovensku komunisté neutralizovali tzv. třetí pražskou dohodou, která omezila pravomoci slovenských orgánů. Výsledek voleb 1946 otevřel komunistům přímou cestu k ovládnutí bezpečnostního aparátu a k definitivnímu uchvácení moci během komunistického převratu v únoru 1948.`,
     parties: [
       {
         id: 'ksc',
@@ -246,7 +254,8 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         historicalPercentage: 31.05,
         historicalSeats: 93,
         description: 'Vítěz voleb v českých zemích. Vystupovala jako tvůrce nového řádu, slibovala specifickou „československou cestu k socialismu“ bez kolchozů.',
-        programHighlight: 'Pevné spojenectví se SSSR, dvouletý plán obnovy, příděl půdy v pohraničí rolníkům a monopol Národní fronty.'
+        programHighlight: 'Pevné spojenectví se SSSR, dvouletý plán obnovy, příděl půdy v pohraničí rolníkům a monopol Národní fronty.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Komunistick%C3%A1_strana_%C4%8Ceskoslovenska'
       },
       {
         id: 'csns',
@@ -258,11 +267,12 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         historicalPercentage: 18.37,
         historicalSeats: 55,
         description: 'Hlavní česká nekomunistická síla. Hájila odkaz T. G. Masaryka a Edvarda Beneše, usilovala o zachování svobody slova a vazeb na Západ.',
-        programHighlight: 'Zastavení dalšího znárodňování, právní stát, ochrana živností a rovnováha mezi Východem a Západem.'
+        programHighlight: 'Zastavení dalšího znárodňování, právní stát, ochrana živností a rovnováha mezi Východem a Západem.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_strana_n%C3%A1rodn%C4%9B_socialistick%C3%A1'
       },
       {
         id: 'csl',
-        shortName: 'ČSL',
+        shortName: 'ČSL (Lidovci)',
         fullName: 'Československá strana lidová',
         ideology: 'Křesťanská demokracie, křesťanský socialismus',
         leaders: ['Jan Šrámek', 'František Hála', 'Adolf Procházka'],
@@ -270,19 +280,21 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         historicalPercentage: 15.64,
         historicalSeats: 46,
         description: 'Křesťansky orientovaná strana opírající se o moravský venkov a katolické věřící. Hájila svobodu náboženství a církevní školství.',
-        programHighlight: 'Obrana křesťanských rodinných hodnot, ochrana soukromého vlastnictví a svobodné volby bez diktátu.'
+        programHighlight: 'Obrana křesťanských rodinných hodnot, ochrana soukromého vlastnictví a svobodné volby bez diktátu.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/KDU-%C4%8CSL'
       },
       {
         id: 'ds',
-        shortName: 'Demokratická strana (DS)',
-        fullName: 'Demokratická strana (na Slovensku)',
+        shortName: 'DS',
+        fullName: 'Demokratická strana',
         ideology: 'Občanská demokracie, křesťanství, slovenská samospráva',
         leaders: ['Jozef Lettrich', 'Ján Ursíny', 'Matej Josko'],
         color: '#2563eb',
         historicalPercentage: 14.07,
         historicalSeats: 43,
         description: 'Slovenský fenomén voleb 1946 (na Slovensku 62 %!). Sjednotila evangelíky i katolíky proti nástupu komunistické diktatury.',
-        programHighlight: 'Slovenská národní samospráva, obnova tržních principů, svoboda vyznání a hráz proti bolševismu.'
+        programHighlight: 'Slovenská národní samospráva, obnova tržních principů, svoboda vyznání a hráz proti bolševismu.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Demokratick%C3%A1_strana_(Slovensko)'
       },
       {
         id: 'cssd',
@@ -294,19 +306,21 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         historicalPercentage: 12.05,
         historicalSeats: 37,
         description: 'Hluboce rozpolcená strana mezi levicovým prokomunistickým křídlem (Fierlinger) a demokratickým protikomunistickým křídlem (Majer).',
-        programHighlight: 'Hospodářské plánování, sociální jistoty pracujících, zachování parlamentních procedur.'
+        programHighlight: 'Hospodářské plánování, sociální jistoty pracujících, zachování parlamentních procedur.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_soci%C3%A1ln%C4%9B_demokratick%C3%A1_strana_d%C4%9Blnick%C3%A1'
       },
       {
         id: 'kss',
-        shortName: 'KSS (na Slovensku)',
+        shortName: 'KSS',
         fullName: 'Komunistická strana Slovenska',
-        ideology: 'Marxismus-leninismus, revoluční socialismus',
+        ideology: 'Marxismus-leninismus, státní socialismus, centralismus',
         leaders: ['Viliam Široký', 'Gustáv Husák', 'Karol Šmidke'],
         color: '#991b1b',
         historicalPercentage: 6.89,
         historicalSeats: 21,
         description: 'Slovenská organizace KSČ. Na Slovensku utrpěla porážku od Demokratické strany, následně s pomocí pražských komunistů usilovala o likvidaci DS.',
-        programHighlight: 'Socializace, centralizace moci v rukou komunistů a potlačení vlivu církve na Slovensku.'
+        programHighlight: 'Socializace, centralizace moci v rukou komunistů a potlačení vlivu církve na Slovensku.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Komunistick%C3%A1_strana_Slovenska_(1939)'
       }
     ],
     questions: [
@@ -326,17 +340,17 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
       },
       {
         id: 3,
-        category: 'Odsun menšin',
-        statement: 'Odsun německého a maďarského obyvatelstva je morální a historickou nutností pro bezpečnost republiky a jejich majetek má patřit našemu lidu.',
-        historicalNote: 'Na odsunu Němců na základě Postupimské dohody a Benešových dekretů panovala v roce 1946 naprostá shoda všech poválečných stran.',
-        partyStances: { ksc: 1, csns: 1, csl: 1, ds: 1, cssd: 1, kss: 1 }
+        category: 'Odsun a právní stát',
+        statement: 'Při odsunu a potrestání kolaborantů musíme důsledně dbát na právní stát a nepřipustit divoké msty a mimosoudní násilí.',
+        historicalNote: 'S odsunem jako takovým souhlasily všechny poválečné strany. Ale demokratické strany (ČSNS, ČSL, DS) se v kampani ostře vymezovaly proti krutostem „Revolučních gard“ a apelovaly na spravedlnost a řádné soudy. Komunisté (KSČ, KSS) tyto excesy často záměrně vyvolávali nebo omlouvali jako „spravedlivý hněv lidu“. ČSSD byla rozpolcená.',
+        partyStances: { ksc: -1, csns: 1, csl: 1, ds: 1, cssd: 0, kss: -1 }
       },
       {
         id: 4,
         category: 'Hranice znárodnění',
-        statement: 'Znárodnění velkého průmyslu a bank dekrety z října 1945 bylo správné, ale rozsah byl vyčerpán; soukromé řemeslo, maloobchod a střední firmy musí zůstat nedotčeny.',
-        historicalNote: 'Gottwald v kampani 1946 veřejně sliboval, že živnostníkům nikdo jejich dílny nevezme, což po únoru 1948 okamžitě porušil.',
-        partyStances: { ksc: 0, csns: 1, csl: 1, ds: 1, cssd: 0, kss: 0 }
+        statement: 'Další vlna znárodňování musí být zastavena; soukromé řemeslo, maloobchod a střední firmy musí zůstat trvale v soukromých rukou.',
+        historicalNote: 'Předvolební boj roku 1946 se vedl přesně o toto. Demokraté slibovali voličům jistotu, že jim nikdo nesebere jejich obchůdky a dílny. Klement Gottwald sice v kampani takticky tvrdil, že živnostníkům nikdo nic nevezme, ale ideologicky a programově KSČ trvala na úplné socializaci ekonomiky. Sociální demokracie chtěla silný státní sektor, ale váhala, jak naložit s drobnými živnostníky.',
+        partyStances: { ksc: -1, csns: 1, csl: 1, ds: 1, cssd: 0, kss: -1 }
       },
       {
         id: 5,
@@ -354,10 +368,10 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
       },
       {
         id: 7,
-        category: 'Půda a pohraničí',
-        statement: 'Zkonfiskovaná půda v pohraničí má být natrvalo zapsána do soukromého vlastnictví rolníků a kolchozy v naší zemi nesmí nikdy vzniknout.',
-        historicalNote: 'Komunistický ministr zemědělství Julius Ďuriš rozdával dekrety na půdu se sloganem „Půda patří tomu, kdo na ní pracuje!“.',
-        partyStances: { ksc: 1, csns: 1, csl: 1, ds: 1, cssd: 1, kss: 1 }
+        category: 'Kultura a svoboda tisku',
+        statement: 'Kultura, tisk a rozhlas by měly být vyňaty z vlivu soukromého kapitálu a řízeny výhradně státem či veřejnými institucemi.',
+        historicalNote: 'Ministerstvo informací ovládal komunista Václav Kopecký, který prosazoval státní monopol na film, rozhlas i vydávání knih. Demokraté (ČSNS, ČSL, DS) zoufale bojovali za to, aby si strany, církve a spolky mohly vydávat nezávislý tisk a zachovat pluralitu. Levicová ČSSD v této době státní dohled nad kulturou převážně podporovala.',
+        partyStances: { ksc: 1, csns: -1, csl: -1, ds: -1, cssd: 1, kss: 1 }
       },
       {
         id: 8,
@@ -425,28 +439,29 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
     turnout: '96,8 %',
     stakes: 'Rozhodovalo se o definitivním potvrzení pádu totality, tempu a charakteru ekonomické transformace a o budoucím soužití Čechů a Slováků ve společném státě.',
     atmosphereQuote: '„Strany jsou pro straníky, Občanské fórum je pro všechny!“ – volební heslo OF',
-    historicalContext: `V červnu 1990 zažilo Československo první skutečně svobodné volby od roku 1946. V euforické atmosféře po Sametové revoluci (listopad 1989), zrušení článku 4 Ústavy o vedoucí úloze KSČ a zvolení Václava Havla prezidentem se k volebním urnám dostavilo neuvěřitelných 96,8 % oprávněných voličů.
+    historicalContext: `V červnu 1990 zažilo Československo první skutečně svobodné volby od roku 1946. V euforické atmosféře po sametové revoluci (listopad 1989), zrušení článku 4 Ústavy o vedoucí úloze KSČ a zvolení Václava Havla prezidentem se k volebním urnám dostavilo neuvěřitelných 96,8 % oprávněných voličů.
 
 Volby fungovaly především jako plebiscit o odmítnutí čtyřicetileté komunistické totality. Za širokým deštníkem revolučních hnutí (Občanské fórum v Česku, Verejnosť proti násiliu na Slovensku) se však již rýsovaly klíčové střety: Jak rychle přejít na tržní ekonomiku? Má se zvolit radikální cesta (Václav Klaus) nebo opatrnější sociální varianta (Valtr Komárek)? Jak se vypořádat s exponenty totality a tajnou policií StB (lustrace)? A jak uspořádat vztahy mezi Čechy a Slováky po vypjaté „pomlčkové válce“?`,
-    outcomeSummary: `Občanské fórum (OF) v Česku získalo drtivých 53,15 % hlasů do Sněmovny lidu FS (celostátně 36,05 %), zatímco na Slovensku zvítězila Verejnosť proti násiliu (VPN) s 32,54 %. Komunistická strana (KSČS) skončila s 13,6 % druhá, což potvrdilo přítomnost nezanedbatelného postkomunistického elektorátu. Výrazného úspěchu dosáhlo na Moravě moravistické Hnutí za samosprávnou demokracii (HSD-SMS) s téměř 8 % hlasů v ČR.
+    outcomeSummary: `Občanské fórum (OF) v Česku získalo drtivých 53,15 % hlasů do Sněmovny lidu FS (celostátně 36,05 %), zatímco na Slovensku zvítězila Verejnosť proti násiliu (VPN) s 32,54 %. Komunistická strana (KSČS) skončila s 13,6 % druhá, což potvrdilo přítomnost nezanedbatelného postkomunistického elektorátu. Výrazného úspěchu dosáhlo na Moravě moravistické Hnutí za samosprávnou demokracii (HSD-SMS) s více než 10 % hlasů do Sněmovny lidu v ČR.
 
 Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN). Volby roku 1990 potvrdily návrat Československa k demokracii, ale mandát na dva roky předznamenal dramatické události: rozpad revolučních hnutí, spor o kuponovou privatizaci a následný rozpad společného státu v roce 1992.`,
     parties: [
       {
         id: 'of',
-        shortName: 'Občanské fórum (OF)',
+        shortName: 'OF',
         fullName: 'Občanské fórum',
         ideology: 'Široké antiautoritářské hnutí, liberální demokracie, tržní reformy',
         leaders: ['Václav Klaus', 'Jiří Dienstbier', 'Jan Urban', 'Petr Pithart'],
         color: '#2563eb',
         historicalPercentage: 36.05,
         historicalSeats: 68,
-        description: 'Vítěz voleb v ČR. Hnutí zrozené v Sametové revoluci, které sjednotilo disidenty, ekonomy i širokou veřejnost k demontáži komunismu.',
-        programHighlight: 'Návrat do Evropy, právní stát, rychlá privatizace a tržní ekonomika, svoboda jednotlivce.'
+        description: 'Vítěz voleb v ČR. Hnutí zrozené v sametové revoluci, které sjednotilo disidenty, ekonomy i širokou veřejnost k demontáži komunismu.',
+        programHighlight: 'Návrat do Evropy, právní stát, rychlá privatizace a tržní ekonomika, svoboda jednotlivce.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Ob%C4%8Dansk%C3%A9_f%C3%B3rum'
       },
       {
         id: 'vpn',
-        shortName: 'Verejnosť proti násiliu (VPN)',
+        shortName: 'VPN',
         fullName: 'Verejnosť proti násiliu',
         ideology: 'Občanské demokratické hnutí, humanismus, reformismus',
         leaders: ['Fedor Gál', 'Vladimír Mečiar', 'Marián Čalfa', 'Milan Kňažko'],
@@ -454,19 +469,21 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         historicalPercentage: 8.56,
         historicalSeats: 19,
         description: 'Slovenský protějšek OF, vítěz voleb na Slovensku. Bojovala za demokracii, ale s větším citem pro specifické sociální a národní potřeby Slovenska.',
-        programHighlight: 'Demokratizace společnosti, federalismus s respektem k slovenské svébytnosti a sociálně citlivá transformace.'
+        programHighlight: 'Demokratizace společnosti, federalismus s respektem k slovenské svébytnosti a sociálně citlivá transformace.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Verejno%C4%BE_proti_n%C3%A1siliu'
       },
       {
         id: 'kscs',
         shortName: 'KSČS',
         fullName: 'Komunistická strana Československa',
-        ideology: 'Demokratický socialismus, postkomunismus',
+        ideology: 'Demokratický socialismus, reformní komunismus, obhajoba socialismu',
         leaders: ['Ladislav Adamec', 'Vasil Mohorita', 'Jiří Svoboda'],
         color: '#dc2626',
         historicalPercentage: 13.59,
         historicalSeats: 23,
         description: 'Bývalá státostrana po ztrátě mocenského monopolu. Hájila sociální jistoty, sociální stát a varovala před masovou nezaměstnaností a výprodejem majetku.',
-        programHighlight: 'Zachování sociálních jistot, odpor k divoké privatizaci a plošným lustracím, vojenská neutralita.'
+        programHighlight: 'Zachování sociálních jistot, odpor k divoké privatizaci a plošným lustracím, vojenská neutralita.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Komunistick%C3%A1_strana_%C4%8Ceskoslovenska'
       },
       {
         id: 'kdu',
@@ -478,7 +495,8 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         historicalPercentage: 10.84,
         historicalSeats: 20,
         description: 'Koalice lidovců a křesťanských aktivistů. V ČR byla těsně před volbami poškozena aférou kolem Josefa Bartončíka, na Slovensku získalo KDH silnou pozici.',
-        programHighlight: 'Restituce církevního a soukromého majetku, ochrana rodiny, křesťanská morálka a sociálně-tržní řád.'
+        programHighlight: 'Restituce církevního a soukromého majetku, ochrana rodiny, křesťanská morálka a sociálně-tržní řád.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/KDU-%C4%8CSL'
       },
       {
         id: 'hsd_sms',
@@ -490,7 +508,8 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         historicalPercentage: 5.39,
         historicalSeats: 9,
         description: 'Velké překvapení voleb na Moravě (v Jihomoravském kraji téměř 30 %!). Požadovalo zemské zřízení a konec pragocentrismu.',
-        programHighlight: 'Obnova moravskoslezské samosprávy, trojfederace (Čechy, Morava a Slezsko, Slovensko) a zemský sněm.'
+        programHighlight: 'Obnova moravskoslezské samosprávy, trojfederace (Čechy, Morava a Slezsko, Slovensko) a zemský sněm.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Hnut%C3%AD_za_samospr%C3%A1vnou_demokracii_%E2%80%93_Spole%C4%8Dnost_pro_Moravu_a_Slezsko'
       },
       {
         id: 'sns',
@@ -502,7 +521,8 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         historicalPercentage: 3.67,
         historicalSeats: 6,
         description: 'Radikálně národní slovenská strana. Jako jediná parlamentní síla v roce 1990 otevřeně žádala samostatné Slovensko a konec federace.',
-        programHighlight: 'Plná státní suverenita Slovenska, slovenština jako jediný úřední jazyk a samostatné vystupování v zahraničí.'
+        programHighlight: 'Plná státní suverenita Slovenska, slovenština jako jediný úřední jazyk a samostatné vystupování v zahraničí.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Slovensk%C3%A1_n%C3%A1rodn%C3%A1_strana'
       },
       {
         id: 'css',
@@ -514,7 +534,8 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         historicalPercentage: 2.68,
         historicalSeats: 0,
         description: 'Bývalá strana Národní fronty, která se během listopadu 1989 postavila režimu (propůjčila balkón Melantrichu). Těsně nepřekročila 5% klauzuli.',
-        programHighlight: 'Postupná sociálně-tržní transformace, posílení národní hrdosti a ochrana zaměstnanců.'
+        programHighlight: 'Postupná sociálně-tržní transformace, posílení národní hrdosti a ochrana zaměstnanců.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensk%C3%A1_strana_socialistick%C3%A1'
       },
       {
         id: 'sz',
@@ -526,7 +547,8 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         historicalPercentage: 3.1,
         historicalSeats: 0,
         description: 'Reagovala na děsivý stav životního prostředí v komunistickém ČSSR (smogy, kyselé deště, devastace Krušných hor).',
-        programHighlight: 'Okamžité zastavení těžby uhlí v severních Čechách, ochrana ovzduší a pitné vody jako vládní priorita.'
+        programHighlight: 'Okamžité zastavení těžby uhlí v severních Čechách, ochrana ovzduší a pitné vody jako vládní priorita.',
+        wikipediaUrl: 'https://cs.wikipedia.org/wiki/Strana_zelen%C3%BDch'
       }
     ],
     questions: [

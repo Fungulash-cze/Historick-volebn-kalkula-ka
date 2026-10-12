@@ -2,14 +2,15 @@
 
 @layer base {
   :root {
-    --canvas: #f8fafc;
-    --card: #ffffff;
-    --border: #e2e8f0;
-    --border-hover: #cbd5e1;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --text-muted: #94a3b8;
-    --primary: #1e3a8a;
+    --canvas: #f4f4f5; /* Subtle zinc-100 gray */
+    --surface: #ffffff;
+    --surface-subtle: #fafafa;
+    --border: #e4e4e7; /* zinc-200 */
+    --border-hover: #d4d4d8; /* zinc-300 */
+    --text-primary: #18181b; /* zinc-900 */
+    --text-secondary: #52525b; /* zinc-600 */
+    --text-muted: #71717a; /* zinc-500 */
+    --primary: #18181b; /* zinc-900 pure dark charcoal */
   }
 
   body {
@@ -25,20 +26,20 @@
   }
 }
 
-/* Card elevations */
+/* Crisp White-Gray Card Elevations */
 .election-card {
   background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e4e4e7;
   border-radius: 12px;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .election-card:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 4px 20px -4px rgba(15, 23, 42, 0.06);
+  border-color: #d4d4d8;
+  box-shadow: 0 4px 20px -4px rgba(24, 24, 27, 0.06);
 }
 
-/* Response buttons - Wahl-O-Mat / Kohovolit standard */
+/* Response buttons - Clean electoral style */
 .btn-choice {
   transition: all 0.15s ease-in-out;
   border-radius: 10px;
@@ -67,18 +68,33 @@
   animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Scrollbar */
+/* Party Slider Carousel Styling */
+.party-slider {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for slick slider */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Standard Scrollbar in neutral gray */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f4f4f5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #d4d4d8;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #a1a1aa;
 }
