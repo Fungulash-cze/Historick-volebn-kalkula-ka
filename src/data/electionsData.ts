@@ -139,7 +139,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
       {
         id: 3,
         category: 'Sociální práva',
-        statement: 'Zákonná osmihodinová pracovní doba musí být nekompromisně vymáhána státem bez jakýchkoli výjimek pro zaměstnavatele.',
+        statement: 'Zákonná pracovní doba smí být nanejvýš 8 hodin denně. Stát to musí u všech zaměstnavatelů tvrdě vymáhat',
         historicalNote: 'Levicové strany byly pro nekompromisní vymáhání. Agrárníci (česko-slovenští i němečtí) sice zákon respektovali, ale tvrdě lobbovali za výjimky pro zemědělství (např. během žní). Národní demokraté chtěli výjimky pro průmysl, lidovci hledali kompromis.',
         partyStances: { cssd: 1, rszml: -1, csl: 0, csns: 1, csnd: -1, dsap: 1, bdl: -1, sls: 0 }
       },
@@ -188,7 +188,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
       {
         id: 10,
         category: 'Hospodářský nacionalismus',
-        statement: 'Všechny akciové společnosti působící na území ČSR musí mít ústředí v republice a jejich vedení musí být v československých rukou (nostrifikace).',
+        statement: 'Podniky působící na našem území nesmí být řízeny ze zahraničí – musí sídlit v Československu a mít domácí vedení.',
         historicalNote: 'Zákon o nostrifikaci odstřihoval vídeňská a budapešťská ústředí a nutil podniky registrovat se a platit daně v Československu.',
         partyStances: { cssd: 1, rszml: 1, csl: 1, csns: 1, csnd: 1, dsap: -1, bdl: -1, sls: 1 }
       },
@@ -216,7 +216,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
       {
         id: 14,
         category: 'Zásluhy o stát',
-        statement: 'Českoslovenští legionáři mají mít zákonem garantované přednostní právo na státní úřady, trafické licence a příděl zabrané půdy.',
+        statement: 'Zákon musí legionářům zajistit přednostní právo na státní úřady, konfiskovanou půdu a licence k provozování trafik (které tehdy sloužily jako finanční zabezpečení veteránů).',
         historicalNote: 'Legionářská tradice byla posvátným mýtem První republiky, pravice a nacionálové ji stavěli nad loajalitu menšin.',
         partyStances: { cssd: 1, rszml: 1, csl: 0, csns: 1, csnd: 1, dsap: -1, bdl: -1, sls: -1 }
       },
@@ -227,7 +227,19 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         historicalNote: 'Levicové strany (ČSSD, ČSNS, DSAP) považovaly Senát za zbytečnou a nedemokratickou konzervativní brzdu, která měla tlumit vůli lidu. Pravice a střed (Agrárníci, Národní demokraté Karla Kramáře, Lidovci) naopak ustavení Senátu tvrdě prosazovali jako pojistku proti revolučním náladám a unáhleným zákonům.',
         partyStances: { cssd: 1, rszml: -1, csl: -1, csns: 1, csnd: -1, dsap: 1, bdl: -1, sls: -1 }
       }
-    ]
+    ],
+    electionSystem: {
+      body: 'Parlament se skládal ze dvou komor: Poslanecké sněmovny (300 mandátů) a Senátu (150 mandátů). V dubnu 1920 se však fakticky obsadilo jen 281 poslaneckých a 142 senátorských křesel. Kvůli tehdy neuzavřeným hranicím a sporům se totiž nevolilo na Těšínsku, Hlučínsku, Vitorazsku ani na Podkarpatské Rusi.',
+      system: 'Poměrný systém ve 23 vícemandátových krajích (pro sněmovnu). Pro přepočet se v prvním skrutiniu používala Hareova kvóta, ve druhém a třetím Hagenbach-Bischoffova. Pro zisk mandátu v kraji neexistovala žádná umělá uzavírací klauzule, stačilo dosáhnout volebního čísla. Hlasovalo se pomocí přísně vázaných kandidátních listin bez možnosti kroužkování.',
+      franchise: 'Všeobecné a rovné volební právo pro muže i ženy (poprvé v historii bez omezujícího majetkového censu). Věk pro volbu do Sněmovny byl stanoven na 21 let, pro Senát na 26 let. Podmínkou bylo státní občanství a bydliště v obci alespoň po dobu 3 měsíců.',
+      eligibility: 'Do Poslanecké sněmovny mohl kandidovat občan od 30 let věku, do Senátu až od 45 let.',
+      trivia: [
+        'Volební povinnost: Účast u voleb byla ze zákona povinná. Kdo se bez vážného důvodu (nemoc, věk nad 70 let, vzdálenost přes 100 km) nedostavil k urnám, riskoval pokutu od 20 do 5 000 Kč nebo vězení až na 1 měsíc.',
+        'Zákaz alkoholu: V den voleb i den předcházející platil v celé republice přísný zákaz nalévání a prodeje jakéhokoli alkoholu.',
+        'První účast žen: Ženy tvořily více než 53 % všech zapsaných voličů. Do parlamentu bylo poprvé zvoleno celkem 16 žen (13 poslankyň a 3 senátorky).',
+        'Národnostní rozmanitost: Německé a maďarské strany získaly přes 30 % všech poslaneckých mandátů, což věrně odráželo etnické složení nového státu.'
+      ]
+    }
   },
   1946: {
     year: 1946,
@@ -429,7 +441,19 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         historicalNote: 'Bílé lístky byly jedinou povolenou formou protestu. Získaly 0,45 % v českých zemích a 0,76 % na Slovensku.',
         partyStances: { ksc: -1, csns: 0, csl: 0, ds: 1, cssd: 0, kss: -1 }
       }
-    ]
+    ],
+    electionSystem: {
+      body: 'Ústavodárné národní shromáždění (jednokomorový parlament o celkových 300 poslancích). Poměr mandátů nebyl pevně daný, ale odvodil se až z volební účasti – nakonec připadlo 231 křesel na české země a 69 na Slovensko. Hlavním úkolem sboru bylo vypracování nové poválečné ústavy.',
+      system: 'Poměrný volební systém ve 28 krajích. Kandidovat směly výhradně povolené strany sdružené v Národní frontě (4 v českých zemích, 4 na Slovensku). Všechny ostatní opoziční strany byly zakázány. Hlasovalo se vázanými kandidátkami.',
+      franchise: 'Všichni českoslovenští státní občané od 18 let (věk byl snížen z předválečných 21 let). Z volebního práva však byli na základě dekretů zcela vyloučeni občané německé a maďarské národnosti a osoby označené za kolaboranty a zrádce.',
+      eligibility: 'Každý občan s aktivním volebním právem, který dosáhl věku 21 let a byl zařazen na schválenou kandidátní listinu jedné ze stran Národní fronty.',
+      trivia: [
+        'Volební povinnost: I v roce 1946 byla účast u voleb pro oprávněné voliče povinná pod sankcí pokuty nebo vězení.',
+        'Institut bílých lístků: Voliči, kteří nesouhlasili s nabídkou povolených stran Národní fronty, mohli do obálky vložit čistý bílý lístek. Celostátně jich bylo vhozeno zhruba 32 tisíc (0,45 % všech hlasů).',
+        'Zákaz pravice: Tradiční a nejsilnější prvorepublikové strany – agrárníci (RSČV) a národní demokraté (ČsND) – měly zakázáno obnovit činnost.',
+        'Slovenský paradox: Ačkoliv komunisté na Slovensku volby drtivě prohráli (vyhrála Demokratická strana s 62 %), tzv. třetí pražská dohoda podepsaná brzy po volbách účelově podřídila slovenské orgány (Sbor pověřenců) centrální pražské vládě řízené Klementem Gottwaldem.'
+      ]
+    }
   },
   1990: {
     year: 1990,
@@ -657,6 +681,18 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         historicalNote: 'Konflikt mezi Havlovou vizí „nepolitické politiky“ v rámci OF a Klausovým budováním standardní pravicové strany (budoucí ODS).',
         partyStances: { of: 1, vpn: 1, kscs: -1, kdu: -1, hsd_sms: 1, sns: -1, css: -1, sz: 0 }
       }
-    ]
+    ],
+    electionSystem: {
+      body: 'Volilo se do dvou komor Federálního shromáždění ČSFR: Sněmovny lidu (150 poslanců) a Sněmovny národů (150 poslanců). Občan zároveň volil i do republikových parlamentů – České národní rady (200 poslanců) nebo Slovenské národní rady (150 poslanců).',
+      system: 'Poměrný systém ve 12 vícemandátových krajích. Poprvé byla zavedena uzavírací klauzule 5 % pro vstup do FS a ČNR (pro SNR platila mírnější hranice 3 %). Pro přepočet hlasů se použila Hagenbach-Bischoffova kvóta. Voliči měli poprvé k dispozici preferenční hlasy (kroužkování až 4 kandidátů).',
+      franchise: 'Všichni občané bez rozdílu národnosti, kteří v den voleb dosáhli věku 18 let. Volební účast již nebyla povinná.',
+      eligibility: 'Každý občan s aktivním volebním právem od 21 let.',
+      trivia: [
+        'Zkrácené volební období: Parlament byl zvolen pouze na přechodné 2leté období (1990–1992), jehož cílem bylo vytvořit novou demokratickou ústavu a nastartovat ekonomické reformy.',
+        'Obrovská účast: K urnám dorazilo 96,8 % voličů, což je absolutní rekord ve svobodných volbách v našich moderních dějinách. Lidé stáli v dlouhých frontách a volby fungovaly jako plebiscit o svobodě.',
+        'Aféra Bartončík: Těsně před volbami v době volebního moratoria obvinil náměstek ministra vnitra Jan Ruml předsedu lidovců Josefa Bartončíka z tajné spolupráce s StB, což pravděpodobně výrazně poškodilo výsledek KDU.',
+        'Síla kroužkování: Voliči hned v prvních volbách masivně využívali preferenční hlasy, díky čemuž tzv. „přeskákalo“ z nižších míst na volitelná křesla mnoho známých disidentů a nezávislých osobností.'
+      ]
+    }
   }
 };

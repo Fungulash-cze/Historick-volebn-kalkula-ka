@@ -24,6 +24,14 @@ export interface Party {
   wikipediaUrl?: string;
 }
 
+export interface ElectionSystemInfo {
+  body: string; // Do jakého tělesa se volilo
+  system: string; // Volební systém a pravidla (přepočet, klauzule, volební obvody)
+  franchise: string; // Kdo mohl volit (aktivní volební právo)
+  eligibility: string; // Kdo mohl být zvolen (pasivní volební právo)
+  trivia: string[]; // Zajímavosti k volbám
+}
+
 export interface ElectionMeta {
   year: ElectionYear;
   title: string;
@@ -36,6 +44,7 @@ export interface ElectionMeta {
   outcomeSummary: string;
   parties: Party[];
   questions: Question[];
+  electionSystem: ElectionSystemInfo;
 }
 
 export interface PartyScore {

@@ -17,6 +17,7 @@ interface AppState {
   expandedPartiesYear: ElectionYear | null;
   sliderYearFilter: 'all' | ElectionYear;
   activeModalParty: { party: Party; year: ElectionYear } | null;
+  activeModalSystemYear: ElectionYear | null;
 }
 
 const state: AppState = {
@@ -31,7 +32,8 @@ const state: AppState = {
   selectedPartyForDetails: null,
   expandedPartiesYear: null,
   sliderYearFilter: 'all',
-  activeModalParty: null
+  activeModalParty: null,
+  activeModalSystemYear: null
 };
 
 function showToast(msg: string) {
@@ -106,6 +108,16 @@ function openPartyModal(partyId: string, year: ElectionYear) {
 
 function closePartyModal() {
   state.activeModalParty = null;
+  renderApp();
+}
+
+function openSystemModal(year: ElectionYear) {
+  state.activeModalSystemYear = year;
+  renderApp();
+}
+
+function closeSystemModal() {
+  state.activeModalSystemYear = null;
   renderApp();
 }
 
@@ -245,11 +257,22 @@ function renderHomeView(): string {
                 ` : ''}
               </div>
 
-              <!-- Tlačítko akce -->
-              <div class="shrink-0 pt-2 md:pt-0">
+              <!-- Tlačítka akcí (Volební systém + Spustit kalkulačku) -->
+              <div class="shrink-0 pt-2 md:pt-0 flex flex-col sm:flex-row md:flex-col gap-2.5 w-full md:w-auto">
+                <button 
+                  onclick="window.calcOpenSystemModal(${y})"
+                  class="w-full md:w-auto px-4 py-2.5 rounded-lg bg-white hover:bg-zinc-100 text-zinc-800 font-semibold text-xs sm:text-xs tracking-tight transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer border border-zinc-300 group"
+                  title="Informace o volebním systému, kdo mohl volit a zajímavosti"
+                >
+                  <svg class="w-4 h-4 text-zinc-500 group-hover:text-zinc-800 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Volební systém a další info</span>
+                </button>
+
                 <button 
                   onclick="window.calcStartQuiz(${y})"
-                  class="w-full md:w-auto px-6 py-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-semibold text-xs sm:text-sm tracking-tight transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer border border-zinc-800"
+                  class="w-full md:w-auto px-6 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-semibold text-xs sm:text-sm tracking-tight transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer border border-zinc-800"
                 >
                   <span>Spustit kalkulačku</span>
                   <span>→</span>
@@ -738,7 +761,7 @@ function renderPartySlider(): string {
             <div class="flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-zinc-900"></span>
               <h3 class="text-sm sm:text-base font-extrabold text-zinc-900 tracking-tight">
-                Katalog historických stran & hnutí
+                Strany a hnutí
               </h3>
             </div>
             <p class="text-xs text-zinc-500 mt-0.5">
@@ -972,6 +995,152 @@ function renderPartyModal(): string {
   `;
 }
 
+function renderSystemModal(): string {
+  if (!state.activeModalSystemYear) return '';
+  const year = state.activeModalSystemYear;
+  const meta = ELECTIONS_DATA[year];
+  const sys = meta.electionSystem;
+
+  return `
+    <div 
+      class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-zinc-900/60 backdrop-blur-xs animate-fadeIn"
+      onclick="if (event.target === this) window.calcCloseSystemModal()"
+    >
+      <div class="bg-white rounded-xl max-w-2xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto shadow-2xl border border-zinc-200">
+        
+        <!-- Hlavička modálu -->
+        <div class="flex items-start justify-between gap-4 pb-4 border-b border-zinc-200 mb-6">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider font-mono">
+                Volební systém a pravidla · ${year}
+              </span>
+              <span class="text-zinc-300">·</span>
+              <span class="text-xs text-zinc-500 font-medium">Účast ${meta.turnout}</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-zinc-900 tracking-tight leading-snug">
+              ${meta.title}
+            </h3>
+            <p class="text-xs sm:text-sm text-zinc-600 mt-1">
+              ${meta.subtitle}
+            </p>
+          </div>
+
+          <!-- Zavírací křížek -->
+          <button 
+            onclick="window.calcCloseSystemModal()"
+            class="text-zinc-400 hover:text-zinc-800 p-1 rounded-lg hover:bg-zinc-100 transition-colors cursor-pointer shrink-0"
+            aria-label="Zavřít"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 4 Sekce informací -->
+        <div class="space-y-4 mb-6">
+          
+          <!-- 1. Do jakého tělesa se volilo -->
+          <div class="p-4 rounded-lg bg-zinc-50 border border-zinc-200">
+            <div class="flex items-center gap-2 text-zinc-900 font-bold text-xs uppercase tracking-wider mb-1.5">
+              <svg class="w-4 h-4 text-zinc-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+              <span>Zastupitelské těleso (Parlament)</span>
+            </div>
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+              ${sys.body}
+            </p>
+          </div>
+
+          <!-- 2. Volební systém a pravidla -->
+          <div class="p-4 rounded-lg bg-zinc-50 border border-zinc-200">
+            <div class="flex items-center gap-2 text-zinc-900 font-bold text-xs uppercase tracking-wider mb-1.5">
+              <svg class="w-4 h-4 text-zinc-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+              <span>Volební systém & přepočet mandátů</span>
+            </div>
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+              ${sys.system}
+            </p>
+          </div>
+
+          <!-- Dvousloupec: Kdo mohl volit vs Kdo mohl být zvolen -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Aktivní volební právo -->
+            <div class="p-4 rounded-lg bg-zinc-50 border border-zinc-200">
+              <div class="flex items-center gap-2 text-zinc-900 font-bold text-xs uppercase tracking-wider mb-1.5">
+                <svg class="w-4 h-4 text-zinc-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span>Kdo mohl volit (Aktivní právo)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+                ${sys.franchise}
+              </p>
+            </div>
+
+            <!-- Pasivní volební právo -->
+            <div class="p-4 rounded-lg bg-zinc-50 border border-zinc-200">
+              <div class="flex items-center gap-2 text-zinc-900 font-bold text-xs uppercase tracking-wider mb-1.5">
+                <svg class="w-4 h-4 text-zinc-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <span>Kdo mohl kandidovat (Pasivní právo)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+                ${sys.eligibility}
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Zajímavosti k volbám -->
+          <div class="p-4 rounded-lg bg-zinc-100/70 border border-zinc-200">
+            <div class="flex items-center gap-2 text-zinc-900 font-bold text-xs uppercase tracking-wider mb-2">
+              <svg class="w-4 h-4 text-zinc-800 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+              <span>Zajímavosti a historické reálie</span>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-zinc-700">
+              ${sys.trivia.map(t => `
+                <li class="flex items-start gap-2">
+                  <span class="text-zinc-400 font-bold select-none">•</span>
+                  <span>${t}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Akční tlačítka v patce modálu -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-zinc-200">
+          <button 
+            onclick="window.calcCloseSystemModal()"
+            class="w-full sm:w-auto px-4 py-2.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 text-zinc-800 font-semibold text-xs tracking-tight transition-colors text-center cursor-pointer border border-zinc-200"
+          >
+            Zavřít okno
+          </button>
+
+          <button 
+            onclick="window.calcStartQuiz(${year}); window.calcCloseSystemModal();"
+            class="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-semibold text-xs sm:text-sm tracking-tight transition-colors text-center flex items-center justify-center gap-2 shadow-xs cursor-pointer border border-zinc-800"
+          >
+            <span>Spustit kalkulačku pro rok ${year}</span>
+            <span>→</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  `;
+}
+
 function renderToast(): string {
   if (!state.toastMessage) return '';
   return `
@@ -1021,6 +1190,7 @@ function renderApp() {
     ${renderPartySlider()}
     ${renderFooter()}
     ${renderPartyModal()}
+    ${renderSystemModal()}
     ${renderToast()}
   `;
 
@@ -1034,10 +1204,15 @@ function attachEventListeners() {
   });
 }
 
-// Klávesa Escape zavírá modální okno
+// Klávesa Escape zavírá modální okna
 window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && state.activeModalParty) {
-    closePartyModal();
+  if (e.key === 'Escape') {
+    if (state.activeModalParty) {
+      closePartyModal();
+    }
+    if (state.activeModalSystemYear) {
+      closeSystemModal();
+    }
   }
 });
 
@@ -1057,6 +1232,8 @@ declare global {
     calcScrollSlider: (direction: 'left' | 'right') => void;
     calcOpenPartyModal: (partyId: string, year: ElectionYear) => void;
     calcClosePartyModal: () => void;
+    calcOpenSystemModal: (year: ElectionYear) => void;
+    calcCloseSystemModal: () => void;
   }
 }
 
@@ -1094,6 +1271,8 @@ window.calcSetSliderFilter = (f) => {
 window.calcScrollSlider = (dir) => scrollPartySlider(dir);
 window.calcOpenPartyModal = (pId, y) => openPartyModal(pId, y);
 window.calcClosePartyModal = () => closePartyModal();
+window.calcOpenSystemModal = (y) => openSystemModal(y);
+window.calcCloseSystemModal = () => closeSystemModal();
 
 window.calcShareResult = () => {
   const top = state.partyScores[0];
