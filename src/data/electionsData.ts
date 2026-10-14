@@ -153,7 +153,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         id: 4,
         title: 'Odluka církve od státu',
         category: 'Církev a stát',
-        statement: 'Škola a stát by měly být odděleny od římskokatolické církve a historická církevní privilegia by měla být odstraněna.',
+        statement: 'Stát by měl být oddělen od římskokatolické církve a historická církevní privilegia by měla být odstraněna.',
         historicalNote: 'Po pádu monarchie sílily požadavky na sekularizaci veřejného života a heslo „Pryč od Říma“. Řešila se otázka, zda má nová republika oddělit veřejný život od vlivu církve a omezit její historická privilegia, anebo zachovat respekt k tradičním náboženským institucím a jejich majetku.',
         context: 'Po pádu monarchie sílily požadavky na sekularizaci veřejného života a heslo „Pryč od Říma“. Řešila se otázka, zda má nová republika oddělit veřejný život od vlivu církve a omezit její historická privilegia, anebo zachovat respekt k tradičním náboženským institucím a jejich majetku.',
         partyStances: { cssd: 1, rszml: 0, csl: -1, csns: 1, csnd: 0, dsap: 1, bdl: -1, sls: -1 }
