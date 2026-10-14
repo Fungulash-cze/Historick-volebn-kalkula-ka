@@ -38,7 +38,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         color: '#16a34a',
         historicalPercentage: 9.7,
         historicalSeats: 28,
-        description: 'Klíčový politický pilíř meziválečné československé demokracie a nejsilnější nesocialistická formace. Její hlavní voličskou základnu tvořili samostatní rolníci, sedláci, venkovská inteligence a družstevníci. Pod pragmatickým vedením Antonína Švehly strana kombinovala obranu soukromého vlastnictví půdy a agrární cla s důslednou státotvorností a sociálním smírem. Byla motorem pozemkové reformy, která měla půdu šlechtických velkostatků rozdělit venkovskému lidu, avšak odmítala jakékoliv socialistické experimenty a kolektivizaci.',
+        description: 'Klíčový politický pilíř meziválečné československé demokracie a nejsilnější nesocialistická formace. Její hlavní voličskou základnu tvořili samostatní rolníci, sedláci, venkovská inteligence a družstevníci. Pod pragmatickým vedením Antonína Švehly strana kombinovala obranu soukromého vlastnictví půdy a agrární cla s důslednou státotvorností a sociálním smírem. Společně se slovenskými agrárníky (kandidujícími v rámci Slovenské národní a rolnické strany) vytvořili po volbách poslanecký klub o celkem 40 poslancích (13,7 % hlasů). Byla motorem pozemkové reformy, která měla půdu šlechtických velkostatků rozdělit venkovskému lidu, avšak odmítala jakékoliv socialistické experimenty a kolektivizaci.',
         programHighlight: 'Půda do rukou rolníků, agrární cla proti levnému dovozu, zachování křesťanských tradic a řádu.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Republik%C3%A1nsk%C3%A1_strana_zem%C4%9Bd%C4%9Blsk%C3%A9ho_a_malorolnick%C3%A9ho_lidu'
       },
@@ -49,9 +49,9 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         ideology: 'Křesťanský socialismus, křesťanská demokracie, katolicismus',
         leaders: ['Jan Šrámek', 'Bohumil Stašek', 'Alois Kříž'],
         color: '#eab308',
-        historicalPercentage: 11.3,
-        historicalSeats: 33,
-        description: 'Hlavní politický reprezentant katolicky orientovaného obyvatelstva, především malorolníků, venkovských řemeslníků, drobných úředníků a věřících dělníků na Moravě a ve východních Čechách. Vznikla v lednu 1919 sloučením katolických proudů pod vedením monsignora Jana Šrámka. V napjaté atmosféře proticírkevního radikalismu mladé republiky důsledně bránila pozice církve, církevní školy, náboženství ve školních osnovách a nedotknutelnost rodiny, přičemž v hospodářské oblasti razila křesťansko-sociální učení a solidaritu.',
+        historicalPercentage: 7.5,
+        historicalSeats: 21,
+        description: 'Hlavní politický reprezentant katolicky orientovaného obyvatelstva, především malorolníků, venkovských řemeslníků, drobných úředníků a věřících dělníků na Moravě a ve východních Čechách. Vznikla v lednu 1919 sloučením katolických proudů pod vedením monsignora Jana Šrámka. Ve volbách 1920 kandidovala na společné kandidátce se SĽS, s níž získala celkem 11,3 % hlasů a 33 křesel (z toho 21 připadlo ČSL). V napjaté atmosféře mladé republiky důsledně bránila pozice církve, církevní školy, náboženství ve školních osnovách a nedotknutelnost rodiny, přičemž v hospodářské oblasti razila křesťansko-sociální učení a solidaritu.',
         programHighlight: 'Obrana katolické církve proti sekularismu, podpora církevního školství a rodinná politika.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/KDU-%C4%8CSL'
       },
@@ -114,9 +114,9 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         ideology: 'Slovenský autonomismus, křesťanský konzervatismus',
         leaders: ['Andrej Hlinka', 'Ferdiš Juriga', 'Florián Tománek'],
         color: '#854d0e',
-        historicalPercentage: 6.8,
+        historicalPercentage: 3.8,
         historicalSeats: 12,
-        description: 'Autonomistické hnutí reprezentující katolické slovenské obyvatelstvo, vedené charismatickým katolickým knězem Andrejem Hlinkou. Ve volbách 1920 kandidovala ještě v taktické unii s českou lidovou stranou pod hlavičkou ČSL, brzy se však plně osamostatnila. Hlásala nedílnou národní svébytnost Slováků, bojovala proti pražskému centralismu a ideologii jednotného „československého národa“. Žádala plné naplnění Pittsburské dohody, zákonodárnou autonomii pro Slovensko a důslednou ochranu katolické víry před pražským laicismem.',
+        description: 'Autonomistické hnutí reprezentující katolické slovenské obyvatelstvo, vedené charismatickým katolickým knězem Andrejem Hlinkou. Ve volbách 1920 kandidovala na společné kandidátce s českou lidovou stranou pod hlavičkou ČSL (získala 12 mandátů a cca 3,8 % celostátních hlasů), brzy se však plně osamostatnila. Hlásala nedílnou národní svébytnost Slováků, bojovala proti pražskému centralismu a ideologii jednotného „československého národa“. Žádala plné naplnění Pittsburské dohody, zákonodárnou autonomii pro Slovensko a důslednou ochranu katolické víry před pražským laicismem.',
         programHighlight: 'Zákonodárná autonomie Slovenska, obrana katolické církve proti pražskému laicismu a čechoslovakismu.',
         wikipediaUrl: 'https://cs.wikipedia.org/wiki/Hlinkova_slovensk%C3%A1_%C4%BEudov%C3%A1_strana'
       }
@@ -398,9 +398,9 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         id: 16,
         title: 'Dávka z majetku (Mimořádné zdanění bohatství)',
         category: 'Daně a finance',
-        statement: 'Stát by měl zavést jednorázovou daň z majetku nabytého během války, aby pomohl stáhnout znehodnocené peníze a vyrovnal dluhy.',
-        historicalNote: 'Po vzniku Československa panovala hrozba inflace kvůli vyššímu množství znehodnocených peněz z dob války. Jedním z navrhovaných řešení bylo zdanit ty, kteří během války na válečné ekonomice zbohatli, a tím tyto peníze stáhnout z oběhu. Rozhodovalo se, zda je tento zásah do majetku obhajitelný potřebou zachránit stabilitu měny.',
-        context: 'Po vzniku Československa panovala hrozba inflace kvůli vyššímu množství znehodnocených peněz z dob války. Jedním z navrhovaných řešení bylo zdanit ty, kteří během války na válečné ekonomice zbohatli, a tím tyto peníze stáhnout z oběhu. Rozhodovalo se, zda je tento zásah do majetku obhajitelný potřebou zachránit stabilitu měny.',
+        statement: 'Stát by měl zavést jednorázovou progresivní daň z většího majetku a válečných zisků, aby stáhl přebytečné peníze z oběhu a vyrovnal dluhy.',
+        historicalNote: 'Po vzniku Československa panovala hrozba inflace kvůli množství znehodnocených peněz z dob války. Dávka z majetku a z přírůstku na majetku měla stabilizovat měnu a stáhnout přebytečné oběživo. Zvažovalo se, zda je takový zásah do majetku nezbytný pro stabilitu měny a snížení státního dluhu, nebo zda nepřiměřeně zatíží sedláky, podnikatele a majitele nemovitostí.',
+        context: 'Po vzniku Československa panovala hrozba inflace kvůli množství znehodnocených peněz z dob války. Dávka z majetku a z přírůstku na majetku měla stabilizovat měnu a stáhnout přebytečné oběživo. Zvažovalo se, zda je takový zásah do majetku nezbytný pro stabilitu měny a snížení státního dluhu, nebo zda nepřiměřeně zatíží sedláky, podnikatele a majitele nemovitostí.',
         partyStances: { cssd: 1, rszml: -1, csl: 0, csns: 1, csnd: 1, dsap: 1, bdl: -1, sls: 0 }
       },
       {
@@ -509,13 +509,13 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         statement: 'Zbytky soukromých železničních drah a související infrastruktury by se měly postupně přesunout do vlastnictví státu.',
         historicalNote: 'Vedle hlavních tahů v zemi nadále fungovala řada komerčních a zemských železnic. Diskutovalo se o tom, zda by nová republika měla z bezpečnostních a strategických důvodů více převzít železniční síť do vlastních rukou, nebo ponechat prostor volnému trhu a komerčním majitelům.',
         context: 'Vedle hlavních tahů v zemi nadále fungovala řada komerčních a zemských železnic. Diskutovalo se o tom, zda by nová republika měla z bezpečnostních a strategických důvodů více převzít železniční síť do vlastních rukou, nebo ponechat prostor volnému trhu a komerčním majitelům.',
-        partyStances: { cssd: 1, rszml: 1, csl: 1, csns: 1, csnd: 1, dsap: -1, bdl: 0, sls: -1 }
+        partyStances: { cssd: 1, rszml: 1, csl: 1, csns: 1, csnd: 1, dsap: -1, bdl: 0, sls: 1 }
       },
       {
         id: 29,
         title: 'Autonomie a majetek německých univerzit',
         category: 'Školství a menšiny',
-        statement: 'Stát by neměl odebírat majetek německé univerzitě ve prospěch českých vysokých škol.',
+        statement: 'Německé univerzitě v Praze by mělo zůstat její dosavadní postavení i historický majetek a stát by jej neměl převádět ve prospěch české univerzity.',
         historicalNote: 'Během prvních let ČSR se řešilo, komu náleží univerzitní budovy (např. Karolinum), které v té době z velké části vlastnila nebo spravovala německá část pražské univerzity. Zákonodárci zvažovali, zda majetek částečně převést českým institucím, nebo respektovat samosprávu a postavení starých akademických celků.',
         context: 'Během prvních let ČSR se řešilo, komu náleží univerzitní budovy (např. Karolinum), které v té době z velké části vlastnila nebo spravovala německá část pražské univerzity. Zákonodárci zvažovali, zda majetek částečně převést českým institucím, nebo respektovat samosprávu a postavení starých akademických celků.',
         partyStances: { cssd: 0, rszml: -1, csl: 0, csns: -1, csnd: -1, dsap: 1, bdl: 1, sls: 1 }
