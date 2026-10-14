@@ -434,19 +434,19 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         id: 20,
         title: 'Prohibiční tendence (Omezování alkoholu)',
         category: 'Veřejné zdraví a společnost',
-        statement: 'Stát by měl omezit prodej alkoholických nápojů a zakázat jejich podávání mladistvým.',
-        historicalNote: 'Do vzniku republiky neexistovalo žádné věkové omezení na konzumaci alkoholu, ke kterému tak měly běžně přístup i děti a mládež. Vzhledem k častějšímu rozšíření alkoholismu řešili tehdejší politici nutnost zavedení zákazu nalévání nezletilým, a zároveň omezení prodeje alkoholu jako celku.',
-        context: 'Do vzniku republiky neexistovalo žádné věkové omezení na konzumaci alkoholu, ke kterému tak měly běžně přístup i děti a mládež. Vzhledem k častějšímu rozšíření alkoholismu řešili tehdejší politici nutnost zavedení zákazu nalévání nezletilým, a zároveň omezení prodeje alkoholu jako celku.',
-        partyStances: { cssd: 1, rszml: -1, csl: 1, csns: 1, csnd: 0, dsap: 1, bdl: -1, sls: 0 }
+        statement: 'Stát by měl omezit výrobu a prodej alkoholických nápojů a regulovat provoz hostinců.',
+        historicalNote: 'Po válce se diskutovalo o potírání alkoholismu po vzoru americké prohibice. Zvažovalo se, zda omezit výrobu i prodej alkoholických nápojů a regulovat hostince v zájmu veřejného zdraví, anebo zachovat volnost obchodu a respektovat společenské zvyklosti.',
+        context: 'Po válce se diskutovalo o potírání alkoholismu po vzoru americké prohibice. Zvažovalo se, zda omezit výrobu i prodej alkoholických nápojů a regulovat hostince v zájmu veřejného zdraví, anebo zachovat volnost obchodu a respektovat společenské zvyklosti.',
+        partyStances: { cssd: 1, rszml: -1, csl: 0, csns: 1, csnd: 0, dsap: 1, bdl: -1, sls: 0 }
       },
       {
         id: 21,
-        title: 'Branná povinnost a armáda',
+        title: 'Nahrazení stálé armády milicemi',
         category: 'Obrana a bezpečnost',
-        statement: 'Československo by se mělo vyhnout budování stálé armády a nahradit ji dobrovolnickými milicemi, případně alespoň zkrátit povinnou vojenskou službu.',
-        historicalNote: 'Zkušenosti z první světové války vyvolaly ve společnosti antimilitaristické nálady. Nový stát řešil, zda navzdory těmto náladám vybuduje tradiční a nákladnou armádu, nebo zda k obraně hranic postačí dobrovolnické sbory či krátký vojenský výcvik spoléhající na uvědomělost občanů.',
-        context: 'Zkušenosti z první světové války vyvolaly ve společnosti antimilitaristické nálady. Nový stát řešil, zda navzdory těmto náladám vybuduje tradiční a nákladnou armádu, nebo zda k obraně hranic postačí dobrovolnické sbory či krátký vojenský výcvik spoléhající na uvědomělost občanů.',
-        partyStances: { cssd: 1, rszml: -1, csl: -1, csns: -1, csnd: -1, dsap: 1, bdl: 1, sls: 0 }
+        statement: 'Československo by se mělo vyhnout budování stálé armády a nahradit ji systémem dobrovolnických či lidových milicí.',
+        historicalNote: 'Zkušenosti z první světové války vyvolaly ve společnosti antimilitaristické nálady. Diskutovalo se o tom, zda je k obraně mladého státu nezbytné vybudovat stálou profesionální armádu, anebo zda by postačoval systém dobrovolnických lidových milicí.',
+        context: 'Zkušenosti z první světové války vyvolaly ve společnosti antimilitaristické nálady. Diskutovalo se o tom, zda je k obraně mladého státu nezbytné vybudovat stálou profesionální armádu, anebo zda by postačoval systém dobrovolnických lidových milicí.',
+        partyStances: { cssd: 1, rszml: -1, csl: -1, csns: -1, csnd: -1, dsap: 1, bdl: -1, sls: 0 }
       },
       {
         id: 22,
@@ -531,11 +531,11 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
       },
       {
         id: 31,
-        title: 'Civilní sňatky a rozvody (Manželská novela)',
+        title: 'Rovnoprávnost civilních sňatků',
         category: 'Rodinné a občanské právo',
-        statement: 'Civilní sňatek na úřadě by měl mít stejnou platnost jako svazek uzavřený v kostele, a stát by měl všem občanům umožnit i legální rozvod.',
-        historicalNote: 'Před vznikem samostatného státu podléhalo uzavírání sňatků a rozvodů církevním normám, které například vůbec neuznávaly plnohodnotný rozvod. Nová legislativa čelila střetu o to, zda upřednostnit moderní světské právo, nebo se držet tradiční náboženské nerozlučitelnosti rodiny.',
-        context: 'Před vznikem samostatného státu podléhalo uzavírání sňatků a rozvodů církevním normám, které například vůbec neuznávaly plnohodnotný rozvod. Nová legislativa čelila střetu o to, zda upřednostnit moderní světské právo, nebo se držet tradiční náboženské nerozlučitelnosti rodiny.',
+        statement: 'Civilní sňatek na úřadě by měl mít stejnou právní platnost jako sňatek uzavřený v kostele.',
+        historicalNote: 'Za monarchie byl občanský sňatek určen pro osoby bez vyznání. Manželská novela z roku 1919 zavedla fakultativní civilní sňatek, kdy si snoubenci mohli zvolit mezi sňatkem na úřadě a v kostele.',
+        context: 'Za monarchie byl občanský sňatek určen pro osoby bez vyznání. Manželská novela z roku 1919 zavedla fakultativní civilní sňatek, kdy si snoubenci mohli zvolit mezi sňatkem na úřadě a v kostele.',
         partyStances: { cssd: 1, rszml: 1, csl: -1, csns: 1, csnd: 1, dsap: 1, bdl: 0, sls: -1 }
       },
       {
@@ -591,6 +591,33 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         historicalNote: 'V důsledku pohybu vojsk prchlo z frontové Haliče do českých zemí větší množství chudých obyvatel, kteří zde přečkali válečné roky. Nový stát po válce balancoval mezi humanistickým závazkem poskytnout těmto válkou zasaženým uprchlíkům integraci do společnosti a domácími tlaky, které požadovaly jejich vyhoštění k uvolnění kapacity bydlení.',
         context: 'V důsledku pohybu vojsk prchlo z frontové Haliče do českých zemí větší množství chudých obyvatel, kteří zde přečkali válečné roky. Nový stát po válce balancoval mezi humanistickým závazkem poskytnout těmto válkou zasaženým uprchlíkům integraci do společnosti a domácími tlaky, které požadovaly jejich vyhoštění k uvolnění kapacity bydlení.',
         partyStances: { cssd: 1, rszml: -1, csl: -1, csns: 0, csnd: -1, dsap: 1, bdl: -1, sls: -1 }
+      },
+      {
+        id: 38,
+        title: 'Zákaz podávání alkoholu mladistvým',
+        category: 'Veřejné zdraví a mládež',
+        statement: 'Stát by měl zákonem zakázat podávání a prodej alkoholických nápojů dětem a mladistvým.',
+        historicalNote: 'Do vzniku republiky neexistovalo zákonné věkové omezení pro prodej a konzumaci alkoholu. Řešilo se, zda by měl stát zákonem chránit dospívající a zakázat podávání alkoholu mladistvým, anebo zda má regulace zůstat v odpovědnosti rodin a hostinských.',
+        context: 'Do vzniku republiky neexistovalo zákonné věkové omezení pro prodej a konzumaci alkoholu. Řešilo se, zda by měl stát zákonem chránit dospívající a zakázat podávání alkoholu mladistvým, anebo zda má regulace zůstat v odpovědnosti rodin a hostinských.',
+        partyStances: { cssd: 1, rszml: 0, csl: 1, csns: 1, csnd: 1, dsap: 1, bdl: 0, sls: 1 }
+      },
+      {
+        id: 39,
+        title: 'Zkrácení povinné vojenské služby',
+        category: 'Obrana a bezpečnost',
+        statement: 'Délka povinné vojenské služby u stálé armády by měla být zkrácena.',
+        historicalNote: 'Při zavádění branné povinnosti se vedla debata o délce vojenské služby. Zvažovalo se, zda je k zajištění obranyschopnosti nutný delší vojenský výcvik, anebo zda prezenční službu zkrátit, aby mladí muži nechyběli v zemědělství a hospodářství.',
+        context: 'Při zavádění branné povinnosti se vedla debata o délce vojenské služby. Zvažovalo se, zda je k zajištění obranyschopnosti nutný delší vojenský výcvik, anebo zda prezenční službu zkrátit, aby mladí muži nechyběli v zemědělství a hospodářství.',
+        partyStances: { cssd: 1, rszml: 0, csl: 0, csns: -1, csnd: -1, dsap: 1, bdl: 1, sls: 1 }
+      },
+      {
+        id: 40,
+        title: 'Uzákonění rozvodu manželství',
+        category: 'Rodinné a občanské právo',
+        statement: 'Stát by měl všem občanům umožnit úřední rozvod manželství s právem uzavřít nový sňatek.',
+        historicalNote: 'Dosavadní rakouské právo katolikům neumožňovalo rozvod (tzv. rozluku), který by dovoloval uzavřít nové manželství. Nová úprava čelila sporu, zda upřednostnit světské právo na rozvod, nebo se držet náboženské zásady nerozlučitelnosti rodiny.',
+        context: 'Dosavadní rakouské právo katolikům neumožňovalo rozvod (tzv. rozluku), který by dovoloval uzavřít nové manželství. Nová úprava čelila sporu, zda upřednostnit světské právo na rozvod, nebo se držet náboženské zásady nerozlučitelnosti rodiny.',
+        partyStances: { cssd: 1, rszml: 0, csl: -1, csns: 1, csnd: 1, dsap: 1, bdl: 0, sls: -1 }
       }
     ],
     electionSystem: {
@@ -705,105 +732,105 @@ Klement Gottwald se stal předsedou koaliční vlády Národní fronty. Komunist
         id: 1,
         category: 'Zahraniční orientace',
         statement: 'Zahraniční a bezpečnostní politika ČSR by měla stát na trvalém spojenectví se Sovětským svazem jako záruce proti případnému německému revanšismu.',
-        historicalNote: 'Sovětský svaz byl po válce vnímán jako osvoboditel. Demokratické strany však varovaly před jednostrannou závislostí na Moskvě.',
+        historicalNote: 'Po zkušenostech s mnichovskou dohodou a osvobození Rudou armádou byla otázka bezpečnosti klíčová. Zvažovalo se, zda opřít obranu státu primárně o spojenectví se Sovětským svazem, anebo zda se vyvarovat jednostranné zahraničněpolitické závislosti.',
         partyStances: { ksc: 1, csns: 0, csl: 0, ds: -1, cssd: 1, kss: 1 }
       },
       {
         id: 2,
         category: 'Most mezi světy',
         statement: 'Československo by mělo usilovat o pozici mostu mezi Východem a Západem a zachovat politické i obchodní vztahy s USA a Velkou Británií.',
-        historicalNote: 'Prezident Edvard Beneš a nekomunistické strany věřili, že ČSR může propojovat západní parlamentní demokracii s rozsáhlými sociálními reformami.',
+        historicalNote: 'V poválečné mezinárodní situaci se řešilo budoucí postavení Československa. Diskutovalo se o možnosti působit jako politický i hospodářský most mezi západními demokraciemi a východním blokem, nebo zda je taková pozice v rozděleném světě dlouhodobě udržitelná.',
         partyStances: { ksc: -1, csns: 1, csl: 1, ds: 1, cssd: 0, kss: -1 }
       },
       {
         id: 3,
         category: 'Odsun a právní stát',
         statement: 'Při odsunu a potrestání kolaborantů by měl stát důsledně dbát na právní stát a předcházet mimosoudnímu násilí.',
-        historicalNote: 'S odsunem německého obyvatelstva v zásadě souhlasily všechny poválečné strany. Demokratické strany (ČSNS, ČSL, DS) se však vymezovaly proti násilnostem a apelovaly na dodržování práva a řádných soudních procesů, zatímco komunisté tyto projevy často omlouvali.',
+        historicalNote: 'Poválečný odsun německého obyvatelstva a trestání kolaborace provázely i excesy a mimosoudní násilí. Řešilo se, nakolik má stát přísně vymáhat dodržování právního řádu a řádných soudních postupů i za cenu zpomalení celého procesu.',
         partyStances: { ksc: -1, csns: 1, csl: 1, ds: 1, cssd: 0, kss: -1 }
       },
       {
         id: 4,
         category: 'Hranice znárodnění',
         statement: 'Další vlna znárodňování by měla být zastavena; soukromé řemeslo, maloobchod a střední firmy by měly zůstat v soukromých rukou.',
-        historicalNote: 'Předvolební debata roku 1946 se točila kolem rozsahu státního vlastnictví. Demokratické strany slibovaly obranu drobných živností a dílen, zatímco komunistické křídlo směřovalo k širší socializaci hospodářství.',
+        historicalNote: 'Po první vlně znárodnění z podzimu 1945 vyvstala otázka budoucího rozsahu soukromého sektoru. Diskutovalo se o tom, zda má být soukromé vlastnictví drobných dílen, živností a maloobchodu garantováno, nebo zda má socializace hospodářství pokračovat i v dalších oblastech.',
         partyStances: { ksc: -1, csns: 1, csl: 1, ds: 1, cssd: 0, kss: -1 }
       },
       {
         id: 5,
         category: 'Další vlna socializace',
         statement: 'Stát by měl v další etapě převzít také velkoobchod, zahraniční obchod a průmyslové podniky s více než 50 zaměstnanci.',
-        historicalNote: 'Tento cíl patřil k dlouhodobým programovým záměrům levice a byl prosazován v rámci postupné socializace hospodářství.',
+        historicalNote: 'Po znárodnění klíčového průmyslu a bank se řešila hranice pro další převod podniků do státních rukou. Zvažovalo se, zda je pro efektivitu a plánování hospodářství nutné zestátnit i střední podniky a zahraniční obchod, anebo ponechat prostor soukromé iniciativě.',
         partyStances: { ksc: 1, csns: -1, csl: -1, ds: -1, cssd: 0, kss: 1 }
       },
       {
         id: 6,
         category: 'Zákaz pravicových stran',
         statement: 'Zákaz předválečné agrární strany a dalších pravicových subjektů byl opodstatněným krokem na ochranu republiky před kolaborací.',
-        historicalNote: 'Zákaz agrární strany vyřadil z politické soutěže tradičního reprezentanta venkova. O hlasy jejích bývalých voličů se v kampani ucházeli především komunisté a lidovci.',
+        historicalNote: 'Po osvobození byla činnost některých předválečných politických stran zakázána s poukazem na podíl jejich představitelů na událostech let 1938–1939. Část společnosti to vnímala jako nutnou očistu politického života, jiní v tom spatřovali nedemokratické omezení politické plurality.',
         partyStances: { ksc: 1, csns: 1, csl: 0, ds: -1, cssd: 1, kss: 1 }
       },
       {
         id: 7,
         category: 'Kultura a svoboda tisku',
         statement: 'Kultura, tisk a rozhlas by měly být vyňaty z vlivu soukromého kapitálu a spravovány státem či veřejnými institucemi.',
-        historicalNote: 'Ministerstvo informací usilovalo o veřejnou kontrolu nad filmem, rozhlasem a tiskem. Demokratické strany naopak bránily možnost spolků a církví vydávat nezávislý tisk a zachovat pluralitu názorů.',
+        historicalNote: 'Po roce 1945 se proměnil mediální prostor – soukromé vydávání novin bylo zakázáno a tisk směly vydávat jen schválené organizace. Řešilo se, nakolik má mít stát kontrolu nad šířením informací a kulturou, a nakolik má být zachována nezávislost a názorová pluralita.',
         partyStances: { ksc: 1, csns: -1, csl: -1, ds: -1, cssd: 1, kss: 1 }
       },
       {
         id: 8,
         category: 'Plánované hospodářství',
         statement: 'Hospodářství by mělo být usměrňováno státním plánem (Dvouletkou) a volný trh by měl ustoupit potřebám celku.',
-        historicalNote: 'Dvouletý plán obnovy na léta 1947–1948 tvořil jeden z ústředních bodů vládního programu po volbách.',
+        historicalNote: 'Poválečná obnova hospodářství otevřela otázku způsobu řízení ekonomiky. Zvažovalo se, nakolik má hospodářský život určovat centrální státní plánování, a jaký prostor má zůstat tržním mechanismům a svobodnému podnikání.',
         partyStances: { ksc: 1, csns: 0, csl: 0, ds: -1, cssd: 1, kss: 1 }
       },
       {
         id: 9,
         category: 'Církev a školství',
         statement: 'Církevní školy a svoboda náboženského vyučování by měly být v nové ústavě zaručeny.',
-        historicalNote: 'Lidovci a slovenští demokraté kladli důraz na ochranu náboženské svobody a církevního školství, zatímco komunisté usilovali o postupné sekularizování veřejného prostoru.',
+        historicalNote: 'V rámci přípravy nové poválečné ústavy se střetávaly rozdílné pohledy na postavení církví ve vzdělávání. Řešilo se, zda zachovat církevní školy a náboženskou výuku jako součást svobody vyznání, nebo zda vybudovat jednotné laické školství spravované výhradně státem.',
         partyStances: { ksc: -1, csns: 0, csl: 1, ds: 1, cssd: -1, kss: -1 }
       },
       {
         id: 10,
         category: 'Postavení Slovenska',
         statement: 'Slovenské národní orgány (SNR a Sbor pověřenců) by měly mít širokou autonomii a centrální vláda v Praze by neměla omezovat slovenskou samosprávu.',
-        historicalNote: 'Po vítězství Demokratické strany na Slovensku byla přijata 3. pražská dohoda, která posílila pravomoci centrální vlády na úkor slovenských orgánů.',
+        historicalNote: 'Vztah mezi českými zeměmi a Slovenskem patřil k ústředním otázkám státoprávního uspořádání. Diskutovalo se o tom, zda má mít Slovensko širokou autonomii s vlastními zákonodárnými a výkonnými orgány, nebo zda má převažovat centralizovaná správa řízená z Prahy.',
         partyStances: { ksc: -1, csns: -1, csl: 0, ds: 1, cssd: -1, kss: -1 }
       },
       {
         id: 11,
         category: 'Bezpečnostní složky',
         statement: 'Sbor národní bezpečnosti (SNB) a vojenské zpravodajství by měly být apolitické a neměly by podléhat vlivu jedné dominantní strany.',
-        historicalNote: 'Otázka politické neutrality bezpečnostních složek se stala jedním z hlavních sporů mezi komunisty a demokratickými stranami.',
+        historicalNote: 'Po válce vznikl nový Sbor národní bezpečnosti. Zásadní otázkou bylo, jak zajistit striktní nestrannost a profesionalitu policie i armádního zpravodajství, aby bezpečnostní aparát nemohl být využíván k politickému vlivu.',
         partyStances: { ksc: -1, csns: 1, csl: 1, ds: 1, cssd: 0, kss: -1 }
       },
       {
         id: 12,
         category: 'Lidové soudnictví a retribuce',
         statement: 'Mimořádné lidové soudy pro potrestání zrádců a kolaborantů by měly postupovat rychle bez zbytečných procedurálních průtahů.',
-        historicalNote: 'Poválečné retribuční dekrety sloužily k rychlému potrestání válečných zločinů a kolaborace, vyvolávaly však také obavy ze zneužití pro politický boj.',
+        historicalNote: 'Poválečné retribuční soudnictví mělo zajistit rychlé potrestání nacistických zločinců a kolaborantů. Stály proti sobě požadavky na rychlost a přísnost na jedné straně a obavy z porušování procesních práv a rizika politického zneužití na straně druhé.',
         partyStances: { ksc: 1, csns: 0, csl: -1, ds: -1, cssd: 0, kss: 1 }
       },
       {
         id: 13,
         category: 'Odbory a závodní rady',
         statement: 'Jednotné odborové hnutí (ROH) a závodní rady by měly mít právo spolurozhodovat o chodu podniků a kontrolovat vedení firem.',
-        historicalNote: 'Odborové hnutí získalo po válce silný vliv na rozhodování v podnicích i na politické dění.',
+        historicalNote: 'Poválečná legislativa přiznala závodním radám a odborům významné pravomoci. Diskutovalo se o tom, nakolik mají zaměstnanci prostřednictvím odborů spolurozhodovat o vedení podniků, a kde končí pravomoci vlastníků či manažerů.',
         partyStances: { ksc: 1, csns: 0, csl: -1, ds: -1, cssd: 1, kss: 1 }
       },
       {
         id: 14,
         category: 'Monopol Národní fronty',
         statement: 'Systém Národní fronty, kde působí pouze povolené vládní strany, představuje vhodnou záruku poválečné národní jednoty.',
-        historicalNote: 'Systém Národní fronty omezil vznik standardní opozice a zúžil politické spektrum na předem povolené formace.',
+        historicalNote: 'Koncept Národní fronty vycházel z myšlenky poválečné jednoty a vyloučení předválečné stranické roztříštěnosti. Stály proti sobě argumenty zdůrazňující potřebu stability při obnově státu a námitky, že zákaz opozičních stran omezuje základní demokratickou soutěž.',
         partyStances: { ksc: 1, csns: 0, csl: 0, ds: -1, cssd: 1, kss: 1 }
       },
       {
         id: 15,
         category: 'Bílé lístky jako protest',
         statement: 'Voličům by mělo být umožněno odevzdat prázdný bílý volební lístek jako legitimní projev nesouhlasu s nabídkou Národní fronty.',
-        historicalNote: 'Bílé lístky představovaly jedinou legální možnost, jak vyjádřit nesouhlas s kandidátkami Národní fronty.',
+        historicalNote: 'Vzhledem k tomu, že k volbám byly připuštěny pouze strany Národní fronty, zvažovala se možnost volby prázdného lístku. Řešilo se, zda má volič mít formální nástroj, jak odmítnout celou nabízenou politickou reprezentaci, nebo zda má volit pouze z navržených kandidátek.',
         partyStances: { ksc: -1, csns: 0, csl: 0, ds: 1, cssd: 0, kss: -1 }
       }
     ],
@@ -945,106 +972,113 @@ Byla vytvořena koaliční federální vláda v čele s Marianem Čalfou (OF/VPN
         id: 1,
         category: 'Ekonomická transformace',
         statement: 'Tržní transformace (liberalizace cen, privatizace a otevření trhů) by měla proběhnout rychle v podobě radikálních reforem, i za cenu dočasného poklesu životní úrovně.',
-        historicalNote: 'Probíhala diskuse mezi zastánci rychlé ekonomické transformace (Václav Klaus) a stoupenci postupnějšího přechodu s větším sociálním ohledem (Valtr Komárek).',
+        historicalNote: 'Při přechodu od centrálně plánované ekonomiky k tržnímu hospodářství se řešila strategie a tempo reforem. Zvažovalo se, zda provést rychlou liberalizaci cen a otevření trhů za cenu krátkodobých sociálních otřesů, anebo zvolit postupnější, regulovaný přechod.',
         partyStances: { of: 1, vpn: 1, kscs: -1, kdu: 0, hsd_sms: 0, sns: -1, css: -1, sz: 0 }
       },
       {
         id: 2,
         category: 'Kuponová privatizace',
         statement: 'Státní podniky by měly být zprivatizovány širokou účastí občanů formou investičních kuponů za symbolický poplatek.',
-        historicalNote: 'Kuponová privatizace byla navržena jako metoda rychlého převodu státního majetku do rukou občanů v situaci nedostatku domácího kapitálu.',
+        historicalNote: 'Kuponová privatizace byla navržena jako metoda rychlého převodu velkého množství státních podniků do rukou občanů při nedostatku domácího kapitálu. Řešilo se, zda je tento masový model efektivní cestou k nalezení skutečných vlastníků, nebo zda upřednostnit standardní prodeje konkrétním investorům.',
         partyStances: { of: 1, vpn: 1, kscs: -1, kdu: 1, hsd_sms: 0, sns: 0, css: -1, sz: 0 }
       },
       {
         id: 3,
         category: 'Sociální jistoty',
         statement: 'Přechod na tržní hospodářství by měl být regulován a rozfázován státem tak, aby nevznikla vysoká nezaměstnanost a neohrozila sociálně slabší skupiny.',
-        historicalNote: 'V debatách o tempu reforem rezonovaly obavy z dopadů na zaměstnanost, zejména v regionech se soustředěným těžkým průmyslem.',
+        historicalNote: 'S nástupem hospodářských změn panovaly obavy z rychlého růstu nezaměstnanosti a sociálních dopadů na obyvatelstvo. Diskutovalo se o tom, do jaké míry by měl stát aktivně tlumit dopady trhu v ohrožených podnicích a regionech, či zda nechat plně působit tržní síly.',
         partyStances: { of: -1, vpn: 0, kscs: 1, kdu: 1, hsd_sms: 1, sns: 1, css: 1, sz: 1 }
       },
       {
         id: 4,
         category: 'Zákaz KSČ',
         statement: 'Komunistická strana by měla být jako totalitní organizace postavena mimo zákon a její majetek by měl připadnout státu.',
-        historicalNote: 'Po listopadu 1989 se zvažovalo, zda KSČ zakázat, nebo ji ponechat v rámci nového demokratického systému; převážil přístup umožňující její účast v politické soutěži.',
+        historicalNote: 'Po pádu totalitního režimu vyvstala otázka právního naložení s bývalou vládnoucí stranou. Zvažovalo se, zda ji z důvodu jejího čtyřicetiletého monopolu na moc zakázat a vyloučit z politického života, anebo jí umožnit účast v demokratické soutěži podle nových pravidel.',
         partyStances: { of: 0, vpn: 0, kscs: -1, kdu: 1, hsd_sms: 0, sns: 0, css: 0, sz: 0 }
       },
       {
         id: 5,
         category: 'Lustrace a vyrovnání s minulostí',
         statement: 'Bývalí agenti a spolupracovníci StB a vysocí funkcionáři KSČ by měli být zákonem vyloučeni z veřejných funkcí a justice.',
-        historicalNote: 'Téma lustrací patřilo k hlavním sporům o vyrovnání se s minulostí a o personální kontinuitu ve veřejné správě.',
+        historicalNote: 'V otázce vyrovnání se s minulostí se zvažovalo zavedení lustračních pravidel. Diskutovalo se o potřebě očistit klíčové státní a bezpečnostní orgány od exponentů minulého režimu na straně jedné a o rizicích uplatnění principu kolektivní viny a spolehlivosti dochovaných záznamů na straně druhé.',
         partyStances: { of: 1, vpn: 0, kscs: -1, kdu: 1, hsd_sms: 0, sns: 0, css: -1, sz: 0 }
       },
       {
         id: 6,
         category: 'Restituce majetku',
         statement: 'Majetek zabavený po únoru 1948 (včetně polností a domů) by měl být v rámci restitucí vrácen původním vlastníkům či jejich dědicům.',
-        historicalNote: 'Restituční zákony měly napravit majetkové křivdy minulého režimu, provázely je však otázky týkající se rozsahu a časového vymezení.',
+        historicalNote: 'Při nápravě majetkových křivd minulého režimu se vedla debata o rozsahu a formě restitucí. Řešila se otázka, zda vrátit původní majetek v naturální podobě i s rizikem právních komplikací a znejistění současných uživatelů, anebo poskytnout pouze finanční odškodnění.',
         partyStances: { of: 1, vpn: 1, kscs: -1, kdu: 1, hsd_sms: 1, sns: 0, css: 0, sz: 1 }
       },
       {
         id: 7,
         category: 'Společný stát',
         statement: 'Československá federace by měla být zachována se silnými společnými pravomocemi v měně, zahraniční politice a obraně.',
-        historicalNote: 'Debata o uspořádání federace řešila rovnováhu mezi společnými federálními pravomocemi a požadavky na posílení pravomocí obou republik.',
+        historicalNote: 'Debata o uspořádání federace řešila rovnováhu mezi zachováním společných federálních pravomocí nezbytných pro soudržnost státu a požadavky na posílení pravomocí obou národních republik.',
         partyStances: { of: 1, vpn: 0, kscs: 1, kdu: 1, hsd_sms: 1, sns: -1, css: 1, sz: 1 }
       },
       {
         id: 8,
         category: 'Slovenská suverenita',
         statement: 'Slovensko by mělo získat plnou národní suverenitu a s Českou republikou vytvořit volnou konfederaci či samostatný stát.',
-        historicalNote: 'Slovenská národní strana přišla s požadavkem na suverenitu, což se stalo významným tématem budoucího státoprávního vývoje.',
+        historicalNote: 'Po uvolnění poměrů se otevřela diskuse o míře samostatnosti obou republik. Zvažovalo se, zda má Slovensko získat plnou národní suverenitu a budovat vlastní mezinárodní subjektivitu, nebo zda zachovat společný federální stát.',
         partyStances: { of: -1, vpn: -1, kscs: -1, kdu: -1, hsd_sms: -1, sns: 1, css: -1, sz: -1 }
       },
       {
         id: 9,
         category: 'Moravská samospráva',
         statement: 'V rámci nového státoprávního uspořádání by mělo být obnoveno historické zemské zřízení Moravy a Slezska s vlastním zemským sněmem a rozpočtem.',
-        historicalNote: 'Hnutí za samosprávnou demokracii požadovalo obnovu moravskoslezské samosprávy a trojspolkové uspořádání státu.',
+        historicalNote: 'Při hledání nové územněsprávní podoby státu vyvstala otázka postavení Moravy a Slezska. Diskutovalo se o tom, zda obnovit historické zemské zřízení a posílit regionální samosprávu, či zachovat dosavadní model členění státu.',
         partyStances: { of: -1, vpn: 0, kscs: 0, kdu: 0, hsd_sms: 1, sns: 0, css: 1, sz: 0 }
       },
       {
         id: 10,
         category: 'Vstup do NATO a na Západ',
         statement: 'Československo by mělo usilovat o plné členství v Severoatlantické alianci (NATO) a Evropském společenství.',
-        historicalNote: 'V roce 1990 ještě formálně existovala Varšavská smlouva a koncepce budoucího bezpečnostního ukotvení země se teprve formulovala.',
+        historicalNote: 'V době rozpadu bipolárního světa hledalo Československo své nové zahraničněpolitické ukotvení. Zvažovalo se, zda usilovat o rychlou integraci do západních struktur a Severoatlantické aliance, nebo hledat jiné formy celoevropské bezpečnostní architektury.',
         partyStances: { of: 1, vpn: 1, kscs: -1, kdu: 1, hsd_sms: 0, sns: 0, css: 0, sz: 0 }
       },
       {
         id: 11,
         category: 'Vojenská neutralita',
         statement: 'Československo by mělo vyhlásit trvalou vojenskou neutralitu po vzoru Rakouska a Švýcarska a nevstupovat do vojenských aliancí.',
-        historicalNote: 'Část politického spektra navrhovala neutralitu jako alternativu ke vstupu do mezinárodních bezpečnostních aliancí.',
+        historicalNote: 'Jako jedna z možností budoucího mezinárodního postavení byla zvažována trvalá vojenská neutralita. Diskutovalo se o tom, zda by neutralita zajistila zemi klid a nezávislost na velmocích, anebo zda bez zapojení do bezpečnostní aliance nelze suverenitu státu účinně garantovat.',
         partyStances: { of: -1, vpn: -1, kscs: 1, kdu: -1, hsd_sms: 0, sns: 1, css: 1, sz: 1 }
       },
       {
         id: 12,
         category: 'Odchod sovětských vojsk',
         statement: 'Odchod sovětských vojsk z našeho území by měl proběhnout v co nejkratším termínu a do posledního vojáka.',
-        historicalNote: 'Jednání o stažení sovětských vojsk z Československa patřila k hlavním prioritám polistopadové zahraniční politiky.',
+        historicalNote: 'Po roce 1968 pobývala na území státu sovětská armáda. Řešilo se, jak rychle a za jakých logistických i diplomatických podmínek má proběhnout jejich úplný odsun, a nakolik má být odchod podmíněn širšími mezinárodními dohodami.',
         partyStances: { of: 1, vpn: 1, kscs: 0, kdu: 1, hsd_sms: 1, sns: 1, css: 1, sz: 1 }
       },
       {
         id: 13,
         category: 'Ekologie a životní prostředí',
         statement: 'Zlepšení stavu poškozeného životního prostředí a ovzduší by mělo mít v rozpočtu vysokou prioritu i s ohledem na tempo růstu ekonomiky.',
-        historicalNote: 'Závažný stav životního prostředí v průmyslových oblastech byl jedním ze spouštěčů společenských změn na podzim 1989.',
+        historicalNote: 'Dlouhodobé znečištění ovzduší a vody představovalo vážný problém pro zdraví obyvatel i přírodu. Diskuse se vedla o tom, nakolik má mít okamžitá ekologizace provozů přednost před ekonomickými náklady a tempem průmyslové výroby.',
         partyStances: { of: 1, vpn: 1, kscs: 0, kdu: 1, hsd_sms: 1, sns: 0, css: 1, sz: 1 }
       },
       {
         id: 14,
-        category: 'Křesťanské a rodinné hodnoty',
-        statement: 'Zákony nové republiky by měly zohledňovat křesťanskou etiku a stát by měl finančně podporovat rodiny a regulovat umělá přerušení těhotenství.',
-        historicalNote: 'Křesťanské strany kladly důraz na morální obnovu a podporu rodiny, zatímco liberální proudy preferovaly sekulární přístup.',
-        partyStances: { of: 0, vpn: 0, kscs: -1, kdu: 1, hsd_sms: 0, sns: 1, css: 0, sz: 0 }
+        category: 'Křesťanské hodnoty a interrupce',
+        statement: 'Zákony nové republiky by měly zohledňovat křesťanskou etiku a stát by měl regulovat umělá přerušení těhotenství.',
+        historicalNote: 'V debatách o etických otázkách a hodnotovém směřování společnosti se střetávaly rozdílné pohledy na ochranu počatého života. Zvažovalo se, zda zpřísnit právní podmínky pro umělá přerušení těhotenství, anebo ponechat dosavadní liberálnější úpravu s právem ženy na vlastní rozhodnutí.',
+        partyStances: { of: -1, vpn: -1, kscs: -1, kdu: 1, hsd_sms: 0, sns: 0, css: -1, sz: -1 }
       },
       {
         id: 15,
         category: 'Charakter politiky (OF vs. strany)',
         statement: 'Politiku by neměly ovládat tradiční stranické aparáty; široká občanská hnutí jsou pro novou společnost vhodnější než klasické ideologické strany.',
-        historicalNote: 'Probíhal spor mezi pojetím politiky založeným na širokých občanských hnutích (Občanské fórum) a budováním standardních politických stran.',
+        historicalNote: 'Po pádu monopolu jedné strany se řešila budoucí podoba politického systému. Diskutovalo se o tom, zda je pro demokracii vhodnější široké nestranické hnutí sdružující různé proudy občanů, nebo zda je nezbytné zformovat standardní politické strany s jasně vymezeným ideologickým programem.',
         partyStances: { of: 1, vpn: 1, kscs: -1, kdu: -1, hsd_sms: 1, sns: -1, css: -1, sz: 0 }
+      },
+      {
+        id: 16,
+        category: 'Rodinná a sociální politika',
+        statement: 'Stát by měl i v době ekonomických reforem finančně podporovat rodiny s dětmi prostřednictvím rodinných přídavků a zvýhodněných půjček.',
+        historicalNote: 'V souvislosti s přechodem k tržnímu hospodářství a liberalizací cen panovaly obavy z dopadů na životní úroveň rodin s dětmi. Řešilo se, zda zachovat plošnou státní finanční podporu a zvýhodněné půjčky pro rodiny, anebo sociální pomoc zúžit pouze na nejvíce ohrožené skupiny.',
+        partyStances: { of: 0, vpn: 0, kscs: 1, kdu: 1, hsd_sms: 1, sns: 1, css: 1, sz: 1 }
       }
     ],
     electionSystem: {

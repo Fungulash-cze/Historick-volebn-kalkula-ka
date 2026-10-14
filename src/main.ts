@@ -300,14 +300,14 @@ function renderHomeView(): string {
                       onclick="window.calcSetYearMode(1920, 'standard')"
                       class="flex-1 py-1.5 px-2 rounded-md transition-all cursor-pointer text-center ${state.selectedYearMode[1920] === 'standard' ? 'bg-white text-zinc-900 font-bold shadow-xs border border-zinc-200' : 'text-zinc-600 hover:text-zinc-900'}"
                     >
-                      Základní (15)
+                      Základní (${meta.questions.length})
                     </button>
                     <button 
                       type="button"
                       onclick="window.calcSetYearMode(1920, 'expanded')"
                       class="flex-1 py-1.5 px-2 rounded-md transition-all cursor-pointer text-center ${state.selectedYearMode[1920] === 'expanded' ? 'bg-white text-zinc-900 font-bold shadow-xs border border-zinc-200' : 'text-zinc-600 hover:text-zinc-900'}"
                     >
-                      Rozšířená (${meta.expandedQuestions ? meta.expandedQuestions.length : 37})
+                      Rozšířená (${meta.expandedQuestions ? meta.expandedQuestions.length : 40})
                     </button>
                   </div>
                 ` : ''}
@@ -559,7 +559,7 @@ function renderResultsView(): string {
           ` : `
             <span>·</span>
             <span class="text-zinc-700 bg-zinc-100 px-2 py-0.5 rounded border border-zinc-200 normal-case font-medium">
-              Základní verze (15 otázek)
+              Základní verze (${questionsToUse.length} otázek)
             </span>
           `}
         </div>
