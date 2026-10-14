@@ -127,8 +127,8 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         title: 'Pozemková reforma a velkostatky',
         category: 'Hospodářství a půda',
         statement: 'Rozsáhlé velkostatky šlechty a církve by měly být státem vyvlastněny a rozděleny mezi bezzemky a drobné rolníky.',
-        historicalNote: 'Po vzniku Československa vlastnila historická šlechta a církev většinu zemědělské a lesní půdy. Řešilo se, zda má nová republika provést zábor velkostatků a půdu přerozdělit drobným hospodářům k nápravě historických poměrů, anebo chránit nedotknutelnost soukromého vlastnictví a zachovat efektivitu velkých zemědělských celků.',
-        context: 'Po vzniku Československa vlastnila historická šlechta a církev většinu zemědělské a lesní půdy. Řešilo se, zda má nová republika provést zábor velkostatků a půdu přerozdělit drobným hospodářům k nápravě historických poměrů, anebo chránit nedotknutelnost soukromého vlastnictví a zachovat efektivitu velkých zemědělských celků.',
+        historicalNote: 'Po vzniku Československa vlastnila šlechta a církev většinu zemědělské a lesní půdy. Řešilo se, zda má nová republika provést zábor velkostatků a půdu přerozdělit drobným hospodářům k nápravě historických poměrů, anebo chránit nedotknutelnost soukromého vlastnictví a zachovat efektivitu velkých zemědělských celků.',
+        context: 'Po vzniku Československa vlastnila šlechta a církev většinu zemědělské a lesní půdy. Řešilo se, zda má nová republika provést zábor velkostatků a půdu přerozdělit drobným hospodářům k nápravě historických poměrů, anebo chránit nedotknutelnost soukromého vlastnictví a zachovat efektivitu velkých zemědělských celků.',
         partyStances: { cssd: 1, rszml: 1, csl: 0, csns: 1, csnd: -1, dsap: 1, bdl: -1, sls: 0 }
       },
       {
