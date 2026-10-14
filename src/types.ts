@@ -4,9 +4,11 @@ export type UserAnswerValue = 1 | 0 | -1;
 
 export interface Question {
   id: number;
+  title?: string;
   category: string;
   statement: string;
   historicalNote: string;
+  context?: string;
   partyStances: Record<string, UserAnswerValue>;
 }
 
@@ -44,6 +46,7 @@ export interface ElectionMeta {
   outcomeSummary: string;
   parties: Party[];
   questions: Question[];
+  expandedQuestions?: Question[];
   electionSystem: ElectionSystemInfo;
 }
 

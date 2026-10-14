@@ -1,10 +1,11 @@
-import { ElectionMeta, PartyScore, UserAnswerValue } from './types.ts';
+import { ElectionMeta, PartyScore, UserAnswerValue, Question } from './types.ts';
 
 export function calculatePartyScores(
   election: ElectionMeta,
-  userAnswers: Record<number, UserAnswerValue>
+  userAnswers: Record<number, UserAnswerValue>,
+  questionsToUse?: Question[]
 ): PartyScore[] {
-  const questions = election.questions;
+  const questions = questionsToUse || election.questions;
   const totalQuestions = questions.length;
 
   if (totalQuestions === 0) return [];

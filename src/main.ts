@@ -7,10 +7,13 @@ import { ElectionYear, UserAnswerValue, PartyScore, Party } from './types.ts';
 interface AppState {
   view: 'home' | 'quiz' | 'results';
   year: ElectionYear;
+  quizMode: 'standard' | 'expanded';
+  selectedYearMode: Record<ElectionYear, 'standard' | 'expanded'>;
   questionIndex: number;
   answers: Record<number, UserAnswerValue>;
   partyScores: PartyScore[];
   showHistoricalNote: boolean;
+  activeContextTooltipId: number | null;
   toastMessage: string | null;
   comparisonFilter: 'all' | 'agree' | 'disagree';
   selectedPartyForDetails: string | null;
@@ -23,10 +26,17 @@ interface AppState {
 const state: AppState = {
   view: 'home',
   year: 1920,
+  quizMode: 'standard',
+  selectedYearMode: {
+    1920: 'standard',
+    1946: 'standard',
+    1990: 'standard'
+  },
   questionIndex: 0,
   answers: {},
   partyScores: [],
   showHistoricalNote: false,
+  activeContextTooltipId: null,
   toastMessage: null,
   comparisonFilter: 'all',
   selectedPartyForDetails: null,
@@ -35,6 +45,14 @@ const state: AppState = {
   activeModalParty: null,
   activeModalSystemYear: null
 };
+
+function getCurrentQuestions(year: ElectionYear, mode: 'standard' | 'expanded') {
+  const currentElection = ELECTIONS_DATA[year];
+  if (mode === 'expanded' && currentElection.expandedQuestions && currentElection.expandedQuestions.length > 0) {
+    return currentElection.expandedQuestions;
+  }
+  return currentElection.questions;
+}
 
 function showToast(msg: string) {
   state.toastMessage = msg;
@@ -51,25 +69,28 @@ function setView(view: AppState['view']) {
   renderApp();
 }
 
-function startQuiz(year: ElectionYear) {
+function startQuiz(year: ElectionYear, mode?: 'standard' | 'expanded') {
   state.year = year;
+  state.quizMode = mode || state.selectedYearMode[year] || 'standard';
   state.questionIndex = 0;
   state.answers = {};
   state.partyScores = [];
   state.showHistoricalNote = false;
+  state.activeContextTooltipId = null;
   state.view = 'quiz';
   window.scrollTo({ top: 0, behavior: 'smooth' });
   renderApp();
 }
 
 function handleAnswer(val: UserAnswerValue) {
-  const currentElection = ELECTIONS_DATA[state.year];
-  const currentQuestion = currentElection.questions[state.questionIndex];
+  const currentQuestions = getCurrentQuestions(state.year, state.quizMode);
+  const currentQuestion = currentQuestions[state.questionIndex];
   state.answers[currentQuestion.id] = val;
 
-  if (state.questionIndex < currentElection.questions.length - 1) {
+  if (state.questionIndex < currentQuestions.length - 1) {
     state.questionIndex++;
     state.showHistoricalNote = false;
+    state.activeContextTooltipId = null;
     renderApp();
   } else {
     finishQuiz();
@@ -78,7 +99,8 @@ function handleAnswer(val: UserAnswerValue) {
 
 function finishQuiz() {
   const currentElection = ELECTIONS_DATA[state.year];
-  const scores = calculatePartyScores(currentElection, state.answers);
+  const currentQuestions = getCurrentQuestions(state.year, state.quizMode);
+  const scores = calculatePartyScores(currentElection, state.answers, currentQuestions);
   state.partyScores = scores;
   state.selectedPartyForDetails = scores[0]?.party.id || null;
   state.view = 'results';
@@ -257,11 +279,11 @@ function renderHomeView(): string {
                 ` : ''}
               </div>
 
-              <!-- Tlačítka akcí (Volební systém + Spustit kalkulačku) -->
-              <div class="shrink-0 pt-2 md:pt-0 flex flex-col sm:flex-row md:flex-col gap-2.5 w-full md:w-auto">
+              <!-- Tlačítka akcí (Volební systém + Volba verze + Spustit kalkulačku) -->
+              <div class="shrink-0 pt-2 md:pt-0 flex flex-col gap-2.5 w-full md:w-56">
                 <button 
                   onclick="window.calcOpenSystemModal(${y})"
-                  class="w-full md:w-auto px-4 py-2.5 rounded-lg bg-white hover:bg-zinc-100 text-zinc-800 font-semibold text-xs sm:text-xs tracking-tight transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer border border-zinc-300 group"
+                  class="w-full px-4 py-2.5 rounded-lg bg-white hover:bg-zinc-100 text-zinc-800 font-semibold text-xs tracking-tight transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer border border-zinc-300 group"
                   title="Informace o volebním systému, kdo mohl volit a zajímavosti"
                 >
                   <svg class="w-4 h-4 text-zinc-500 group-hover:text-zinc-800 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -270,9 +292,29 @@ function renderHomeView(): string {
                   <span>Volební systém a další info</span>
                 </button>
 
+                ${y === 1920 ? `
+                  <!-- Přepínač verze pro rok 1920 -->
+                  <div class="bg-zinc-100 p-1 rounded-lg border border-zinc-200 flex items-center gap-1 text-[11px] font-medium w-full">
+                    <button 
+                      type="button"
+                      onclick="window.calcSetYearMode(1920, 'standard')"
+                      class="flex-1 py-1.5 px-2 rounded-md transition-all cursor-pointer text-center ${state.selectedYearMode[1920] === 'standard' ? 'bg-white text-zinc-900 font-bold shadow-xs border border-zinc-200' : 'text-zinc-600 hover:text-zinc-900'}"
+                    >
+                      Základní (15)
+                    </button>
+                    <button 
+                      type="button"
+                      onclick="window.calcSetYearMode(1920, 'expanded')"
+                      class="flex-1 py-1.5 px-2 rounded-md transition-all cursor-pointer text-center ${state.selectedYearMode[1920] === 'expanded' ? 'bg-white text-zinc-900 font-bold shadow-xs border border-zinc-200' : 'text-zinc-600 hover:text-zinc-900'}"
+                    >
+                      Rozšířená (${meta.expandedQuestions ? meta.expandedQuestions.length : 37})
+                    </button>
+                  </div>
+                ` : ''}
+
                 <button 
                   onclick="window.calcStartQuiz(${y})"
-                  class="w-full md:w-auto px-6 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-semibold text-xs sm:text-sm tracking-tight transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer border border-zinc-800"
+                  class="w-full px-6 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-semibold text-xs sm:text-sm tracking-tight transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer border border-zinc-800"
                 >
                   <span>Spustit kalkulačku</span>
                   <span>→</span>
@@ -310,8 +352,9 @@ function renderHomeView(): string {
 
 function renderQuizView(): string {
   const currentElection = ELECTIONS_DATA[state.year];
-  const totalQuestions = currentElection.questions.length;
-  const q = currentElection.questions[state.questionIndex];
+  const questionsToUse = getCurrentQuestions(state.year, state.quizMode);
+  const totalQuestions = questionsToUse.length;
+  const q = questionsToUse[state.questionIndex];
   const progressPercent = Math.round(((state.questionIndex + 1) / totalQuestions) * 100);
   const currentAnswer = state.answers[q.id];
 
@@ -331,6 +374,15 @@ function renderQuizView(): string {
           
           <div class="flex items-center gap-2">
             <span class="font-bold text-zinc-900">Volby ${state.year}</span>
+            ${state.quizMode === 'expanded' ? `
+              <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-200 px-2 py-0.5 rounded-full">
+                Rozšířená verze
+              </span>
+            ` : `
+              <span class="text-[10px] font-medium text-zinc-600 bg-zinc-100 border border-zinc-200 px-2 py-0.5 rounded-full">
+                Základní verze
+              </span>
+            `}
             <span class="text-zinc-300">·</span>
             <span class="text-zinc-600 font-medium">
               Otázka ${state.questionIndex + 1} z ${totalQuestions}
@@ -347,36 +399,56 @@ function renderQuizView(): string {
       </div>
 
       <!-- Hlavní dotazníková karta v bílošedém stylu -->
-      <div class="bg-white border border-zinc-200 rounded-xl p-6 sm:p-8 shadow-xs mb-6">
+      <div class="bg-white border border-zinc-200 rounded-xl p-6 sm:p-8 shadow-xs mb-6 relative">
         
-        <!-- Kategorie -->
-        <div class="mb-3">
+        <!-- Kategorie a Otazníček s dobovým kontextem -->
+        <div class="flex items-center justify-between gap-3 mb-3 relative">
           <span class="text-[11px] font-bold text-zinc-500 uppercase tracking-wider bg-zinc-100 px-2.5 py-1 rounded border border-zinc-200">
             ${q.category}
           </span>
-        </div>
 
-        <!-- Tvrzení -->
-        <h2 class="text-xl sm:text-2xl font-bold text-zinc-900 tracking-tight leading-snug mb-6">
-          ${q.statement}
-        </h2>
+          ${(q.context || q.historicalNote) ? `
+            <div class="relative group/tooltip">
+              <button 
+                type="button"
+                onclick="window.calcToggleContextTooltip(${q.id})"
+                class="w-7 h-7 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-800 hover:text-zinc-950 border border-zinc-300 font-bold text-xs flex items-center justify-center transition-all cursor-help shadow-2xs focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                title="Dobový kontext otázky (najetím myší nebo kliknutím zobrazíte vysvětlení)"
+                aria-label="Dobový kontext otázky"
+              >
+                ?
+              </button>
 
-        <!-- Dobový kontext -->
-        <div class="mb-8 pt-3 border-t border-zinc-100">
-          <button 
-            id="btn-toggle-note"
-            class="text-xs text-zinc-500 hover:text-zinc-900 font-medium flex items-center gap-1.5 transition-colors cursor-pointer"
-          >
-            <span class="text-[10px] transform ${state.showHistoricalNote ? 'rotate-90' : ''} transition-transform">▶</span>
-            <span>Dobový kontext a vysvětlení otázky</span>
-          </button>
-
-          ${state.showHistoricalNote ? `
-            <div class="mt-3 p-3.5 bg-zinc-50 border border-zinc-200 rounded-lg text-xs text-zinc-700 leading-relaxed animate-fadeIn text-justify [hyphens:auto]">
-              <strong>Historické pozadí:</strong> ${q.historicalNote}
+              <!-- Tooltip bublina (zobrazí se při najetí myší i při kliknutí/tapnutí) -->
+              <div 
+                id="context-tooltip-${q.id}"
+                class="${state.activeContextTooltipId === q.id ? 'block' : 'hidden group-hover/tooltip:block'} absolute right-0 top-full mt-2 w-72 sm:w-88 md:w-96 p-4 bg-zinc-900 text-zinc-100 text-xs leading-relaxed rounded-xl shadow-2xl z-50 border border-zinc-800 text-justify [hyphens:auto] animate-fadeIn"
+              >
+                <div class="flex items-center justify-between pb-2 mb-2 border-b border-zinc-800">
+                  <div class="flex items-center gap-1.5 text-zinc-200 font-semibold text-[11px]">
+                    <span class="text-amber-400">💡</span> Dobový kontext otázky
+                  </div>
+                  <button 
+                    type="button"
+                    onclick="event.stopPropagation(); window.calcCloseContextTooltip()"
+                    class="text-zinc-400 hover:text-white p-0.5 text-xs font-bold leading-none cursor-pointer"
+                    title="Zavřít"
+                  >
+                    ✕
+                  </button>
+                </div>
+                <p class="text-zinc-300 font-normal leading-relaxed text-justify [hyphens:auto]">
+                  ${q.context || q.historicalNote}
+                </p>
+              </div>
             </div>
           ` : ''}
         </div>
+
+        <!-- Tvrzení -->
+        <h2 class="text-xl sm:text-2xl font-bold text-zinc-900 tracking-tight leading-snug mb-8">
+          ${q.statement}
+        </h2>
 
         <!-- 3 Volební tlačítka (Ano / Nevím / Ne) -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -412,39 +484,51 @@ function renderQuizView(): string {
 
       </div>
 
-      <!-- Spodní ovládací prvky -->
-      <div class="flex items-center justify-between text-xs text-zinc-500 px-1">
+      <!-- Navigace mezi otázkami (Předchozí / Přeskočit) -->
+      <div class="flex items-center justify-between text-xs text-zinc-500 mb-4 px-1">
         <button 
           ${state.questionIndex > 0 ? `onclick="window.calcPrevQuestion()"` : 'disabled'}
-          class="hover:text-zinc-900 transition-colors disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer"
+          class="hover:text-zinc-900 transition-colors disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1.5 cursor-pointer py-1.5 px-3 rounded-lg bg-white border border-zinc-200 hover:bg-zinc-50 shadow-2xs"
         >
           <span>←</span>
           <span>Předchozí otázka</span>
         </button>
 
-        <!-- Číselný navigátor -->
-        <div class="hidden sm:flex items-center gap-1">
-          ${currentElection.questions.map((item, idx) => {
+        <span class="text-xs font-medium text-zinc-500">
+          Otázka ${state.questionIndex + 1} z ${totalQuestions}
+        </span>
+
+        <button 
+          onclick="window.calcHandleAnswer(0)"
+          class="hover:text-zinc-900 transition-colors font-medium flex items-center gap-1.5 cursor-pointer py-1.5 px-3 rounded-lg bg-white border border-zinc-200 hover:bg-zinc-50 shadow-2xs"
+        >
+          <span>Přeskočit</span>
+          <span>→</span>
+        </button>
+      </div>
+
+      <!-- Číselník otázek: zarovnaný přesně na šířku okna s otázkou ve více řádcích -->
+      <div class="w-full bg-white border border-zinc-200 rounded-xl p-4 sm:p-5 shadow-xs">
+        <div class="flex items-center justify-between text-xs text-zinc-500 font-medium mb-3 pb-2 border-b border-zinc-100">
+          <span class="text-zinc-800 font-semibold">Číselník otázek:</span>
+          <span>Zodpovězeno ${Object.keys(state.answers).length} z ${totalQuestions}</span>
+        </div>
+
+        <div class="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-1.5 sm:gap-2 w-full">
+          ${questionsToUse.map((item, idx) => {
             const isAnswered = state.answers[item.id] !== undefined;
             const isCurrent = idx === state.questionIndex;
             return `
               <button 
                 onclick="window.calcJumpQuestion(${idx})"
-                class="w-5 h-5 rounded flex items-center justify-center text-[10px] font-mono transition-colors cursor-pointer ${isCurrent ? 'bg-zinc-900 text-white font-bold' : isAnswered ? 'bg-zinc-200 text-zinc-800 font-medium' : 'text-zinc-400 hover:bg-zinc-100'}"
+                title="Přejít na otázku ${idx + 1}: ${item.title || item.category}"
+                class="h-8 rounded-lg flex items-center justify-center text-xs font-mono font-medium transition-all cursor-pointer border ${isCurrent ? 'bg-zinc-900 text-white border-zinc-900 font-bold shadow-xs ring-2 ring-zinc-400 ring-offset-1' : isAnswered ? 'bg-zinc-100 text-zinc-800 border-zinc-300 hover:bg-zinc-200 font-semibold' : 'bg-white text-zinc-400 border-zinc-200 hover:border-zinc-300 hover:text-zinc-700 hover:bg-zinc-50'}"
               >
                 ${idx + 1}
               </button>
             `;
           }).join('')}
         </div>
-
-        <button 
-          onclick="window.calcHandleAnswer(0)"
-          class="hover:text-zinc-900 transition-colors font-medium flex items-center gap-1 cursor-pointer"
-        >
-          <span>Přeskočit</span>
-          <span>→</span>
-        </button>
       </div>
 
     </main>
@@ -453,6 +537,7 @@ function renderQuizView(): string {
 
 function renderResultsView(): string {
   const currentElection = ELECTIONS_DATA[state.year];
+  const questionsToUse = getCurrentQuestions(state.year, state.quizMode);
   const topMatch = state.partyScores[0];
   const selectedPartyId = state.selectedPartyForDetails || topMatch?.party.id;
   const selectedParty = currentElection.parties.find(p => p.id === selectedPartyId) || topMatch?.party;
@@ -462,10 +547,21 @@ function renderResultsView(): string {
       
       <!-- Titulek výsledků -->
       <div class="mb-8">
-        <div class="flex items-center gap-2 text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-1">
+        <div class="flex flex-wrap items-center gap-2 text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-1">
           <span>Výsledky kalkulačky</span>
           <span>·</span>
           <span>Volby ${state.year}</span>
+          ${state.quizMode === 'expanded' ? `
+            <span>·</span>
+            <span class="text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-200 normal-case font-bold">
+              Rozšířená verze (${questionsToUse.length} otázek)
+            </span>
+          ` : `
+            <span>·</span>
+            <span class="text-zinc-700 bg-zinc-100 px-2 py-0.5 rounded border border-zinc-200 normal-case font-medium">
+              Základní verze (15 otázek)
+            </span>
+          `}
         </div>
         <h1 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight">
           Vaše názorová shoda s kandidujícími stranami
@@ -597,7 +693,7 @@ function renderResultsView(): string {
                 onclick="window.calcSetComparisonFilter('all')"
                 class="px-3 py-1 rounded-md transition-colors cursor-pointer ${state.comparisonFilter === 'all' ? 'bg-white text-zinc-900 shadow-xs font-semibold' : 'text-zinc-600 hover:text-zinc-900'}"
               >
-                Všechny (15)
+                Všechny (${questionsToUse.length})
               </button>
               <button 
                 onclick="window.calcSetComparisonFilter('agree')"
@@ -615,7 +711,7 @@ function renderResultsView(): string {
           </div>
 
           <div class="space-y-3">
-            ${currentElection.questions
+            ${questionsToUse
               .filter(q => {
                 const userVal = state.answers[q.id] ?? 0;
                 const partyVal = q.partyStances[selectedParty.id] ?? 0;
@@ -1198,10 +1294,7 @@ function renderApp() {
 }
 
 function attachEventListeners() {
-  document.getElementById('btn-toggle-note')?.addEventListener('click', () => {
-    state.showHistoricalNote = !state.showHistoricalNote;
-    renderApp();
-  });
+  // Event listeners hooked via window declarations
 }
 
 // Klávesa Escape zavírá modální okna
@@ -1234,6 +1327,9 @@ declare global {
     calcClosePartyModal: () => void;
     calcOpenSystemModal: (year: ElectionYear) => void;
     calcCloseSystemModal: () => void;
+    calcSetYearMode: (year: ElectionYear, mode: 'standard' | 'expanded') => void;
+    calcToggleContextTooltip: (qId: number) => void;
+    calcCloseContextTooltip: () => void;
   }
 }
 
@@ -1243,12 +1339,14 @@ window.calcPrevQuestion = () => {
   if (state.questionIndex > 0) {
     state.questionIndex--;
     state.showHistoricalNote = false;
+    state.activeContextTooltipId = null;
     renderApp();
   }
 };
 window.calcJumpQuestion = (idx) => {
   state.questionIndex = idx;
   state.showHistoricalNote = false;
+  state.activeContextTooltipId = null;
   renderApp();
 };
 window.calcSetView = (v) => setView(v);
@@ -1273,6 +1371,18 @@ window.calcOpenPartyModal = (pId, y) => openPartyModal(pId, y);
 window.calcClosePartyModal = () => closePartyModal();
 window.calcOpenSystemModal = (y) => openSystemModal(y);
 window.calcCloseSystemModal = () => closeSystemModal();
+window.calcSetYearMode = (y, m) => {
+  state.selectedYearMode[y] = m;
+  renderApp();
+};
+window.calcToggleContextTooltip = (qId) => {
+  state.activeContextTooltipId = state.activeContextTooltipId === qId ? null : qId;
+  renderApp();
+};
+window.calcCloseContextTooltip = () => {
+  state.activeContextTooltipId = null;
+  renderApp();
+};
 
 window.calcShareResult = () => {
   const top = state.partyScores[0];
