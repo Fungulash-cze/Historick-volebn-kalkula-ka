@@ -264,8 +264,8 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         title: 'Pozemková reforma a velkostatky',
         category: 'Hospodářství a půda',
         statement: 'Rozsáhlé velkostatky šlechty a církve by měly být státem vyvlastněny a rozděleny mezi bezzemky a drobné rolníky.',
-        historicalNote: 'Po vzniku Československa vlastnila historická šlechta a církev většinu zemědělské a lesní půdy. Řešilo se, zda má nová republika provést zábor velkostatků a půdu přerozdělit drobným hospodářům k nápravě historických poměrů, anebo chránit nedotknutelnost soukromého vlastnictví a zachovat efektivitu velkých zemědělských celků.',
-        context: 'Po vzniku Československa vlastnila historická šlechta a církev většinu zemědělské a lesní půdy. Řešilo se, zda má nová republika provést zábor velkostatků a půdu přerozdělit drobným hospodářům k nápravě historických poměrů, anebo chránit nedotknutelnost soukromého vlastnictví a zachovat efektivitu velkých zemědělských celků.',
+        historicalNote: 'Po vzniku Československa vlastnila šlechta a církev většinu zemědělské a lesní půdy. Řešilo se, zda má nová republika provést zábor velkostatků a půdu přerozdělit drobným hospodářům k nápravě historických poměrů, anebo chránit nedotknutelnost soukromého vlastnictví a zachovat efektivitu velkých zemědělských celků.',
+        context: 'Po vzniku Československa vlastnila šlechta a církev většinu zemědělské a lesní půdy. Řešilo se, zda má nová republika provést zábor velkostatků a půdu přerozdělit drobným hospodářům k nápravě historických poměrů, anebo chránit nedotknutelnost soukromého vlastnictví a zachovat efektivitu velkých zemědělských celků.',
         partyStances: { cssd: 1, rszml: 1, csl: 0, csns: 1, csnd: -1, dsap: 1, bdl: -1, sls: 0 }
       },
       {
@@ -290,7 +290,7 @@ Již na podzim 1920 však v ČSSD propukl hluboký rozkol mezi demokratickým k�
         id: 4,
         title: 'Odluka církve od státu',
         category: 'Církev a stát',
-        statement: 'Škola a stát by měly být odděleny od římskokatolické církve a historická církevní privilegia by měla být odstraněna.',
+        statement: 'Stát by měl být oddělen od římskokatolické církve a historická církevní privilegia by měla být odstraněna.',
         historicalNote: 'Po pádu monarchie sílily požadavky na sekularizaci veřejného života a heslo „Pryč od Říma“. Řešila se otázka, zda má nová republika oddělit veřejný život od vlivu církve a omezit její historická privilegia, anebo zachovat respekt k tradičním náboženským institucím a jejich majetku.',
         context: 'Po pádu monarchie sílily požadavky na sekularizaci veřejného života a heslo „Pryč od Říma“. Řešila se otázka, zda má nová republika oddělit veřejný život od vlivu církve a omezit její historická privilegia, anebo zachovat respekt k tradičním náboženským institucím a jejich majetku.',
         partyStances: { cssd: 1, rszml: 0, csl: -1, csns: 1, csnd: 0, dsap: 1, bdl: -1, sls: -1 }
